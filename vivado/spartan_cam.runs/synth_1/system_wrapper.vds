@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jul 22 16:47:06 2020
+# Process ID: 9016
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/system_wrapper.vds
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Olivier/Xilinx_Vitis/Vitis_VM/Shared/sobelfilter.prj 20200708/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Olivier/Xilinx_Vitis/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.cache/ip 
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1056.078 ; gain = 394.621
+Command: synth_design -top system_wrapper -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20192
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Olivier/Xilinx_Vitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [D:/Olivier/Xilinx_Vitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:789]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_0_0' (2#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_iic_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_iic_0_0' (3#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'iic2intc_irpt' of module 'system_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1040]
+WARNING: [Synth 8-7071] port 'gpo' of module 'system_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1040]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'system_axi_iic_0_0' has 27 connections declared, but only 25 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1040]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_uartlite_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_uartlite_0_0' (4#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'system_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1066]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'system_axi_uartlite_0_0' has 22 connections declared, but only 21 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1066]
+INFO: [Synth 8-6157] synthesizing module 'system_bayer2rgb_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_bayer2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_bayer2rgb_0_0' (5#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_bayer2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_wiz_0_1' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_wiz_0_1' (6#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_wiz_1_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_wiz_1_0' (7#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_csi2_d_phy_rx_0_1' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi2_d_phy_rx_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_csi2_d_phy_rx_0_1' (8#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi2_d_phy_rx_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'dl2_rxactivehs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl2_rxvalidhs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl2_rxsynchs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl2_datahs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl3_rxactivehs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl3_rxvalidhs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl3_rxsynchs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7071] port 'dl3_datahs' of module 'system_csi2_d_phy_rx_0_1' is unconnected for instance 'csi2_d_phy_rx_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+WARNING: [Synth 8-7023] instance 'csi2_d_phy_rx_0' of module 'system_csi2_d_phy_rx_0_1' has 33 connections declared, but only 25 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1108]
+INFO: [Synth 8-6157] synthesizing module 'system_csi2dvp_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi2dvp_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_csi2dvp_0_0' (9#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi2dvp_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_csi_to_axis_0_1' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi_to_axis_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_csi_to_axis_0_1' (10#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_csi_to_axis_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_gamma_correction_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_gamma_correction_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_gamma_correction_0_0' (11#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_gamma_correction_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'state' of module 'system_gamma_correction_0_0' is unconnected for instance 'gamma_correction_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1173]
+WARNING: [Synth 8-7023] instance 'gamma_correction_0' of module 'system_gamma_correction_0_0' has 4 connections declared, but only 3 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1173]
+INFO: [Synth 8-6157] synthesizing module 'system_mdm_1_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_mdm_1_0' (12#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_microblaze_0_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_microblaze_0_0' (13#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'system_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1190]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'system_microblaze_0_0' has 52 connections declared, but only 51 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1190]
+INFO: [Synth 8-6157] synthesizing module 'system_microblaze_0_axi_periph_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1371]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1RZ0IW6' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1RZ0IW6' (14#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_K87I2F' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_K87I2F' (15#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_QYRHL1' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_QYRHL1' (16#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:276]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1LZPV07' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:642]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1LZPV07' (17#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:642]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (18#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_xbar_0' is unconnected for instance 'xbar' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1924]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_xbar_0' is unconnected for instance 'xbar' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1924]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'system_xbar_0' has 40 connections declared, but only 38 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1924]
+INFO: [Synth 8-6155] done synthesizing module 'system_microblaze_0_axi_periph_0' (19#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1371]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:408]
+INFO: [Synth 8-6157] synthesizing module 'system_dlmb_bram_if_cntlr_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_dlmb_bram_if_cntlr_0' (20#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_dlmb_v10_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_dlmb_v10_0' (21#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'system_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:554]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'system_dlmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:554]
+INFO: [Synth 8-6157] synthesizing module 'system_ilmb_bram_if_cntlr_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ilmb_bram_if_cntlr_0' (22#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_ilmb_v10_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ilmb_v10_0' (23#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'system_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:600]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'system_ilmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:600]
+INFO: [Synth 8-6157] synthesizing module 'system_lmb_bram_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_lmb_bram_0' (24#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'system_lmb_bram_0' is unconnected for instance 'lmb_bram' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:625]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'system_lmb_bram_0' is unconnected for instance 'lmb_bram' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:625]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'system_lmb_bram_0' has 16 connections declared, but only 14 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:625]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' (25#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:408]
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2dvi_0_1' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_rgb2dvi_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2dvi_0_1' (26#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_rgb2dvi_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_clk_wiz_0_200M_0' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_rst_clk_wiz_0_200M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_clk_wiz_0_200M_0' (27#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/.Xil/Vivado-9016-LAPTOP-KDBVI58S/realtime/system_rst_clk_wiz_0_200M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_clk_wiz_0_200M_0' is unconnected for instance 'rst_clk_wiz_0_200M' [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1357]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_200M' of module 'system_rst_clk_wiz_0_200M_0' has 10 connections declared, but only 9 given [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:1357]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconstant_0_0' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (28#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconstant_0_0' (29#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_xlconstant_0_0/synth/system_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'system' (30#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (31#1) [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1056.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc] for cell 'system_i/clk_wiz_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc:4]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc] for cell 'system_i/clk_wiz_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc] for cell 'system_i/csi2_d_phy_rx_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc] for cell 'system_i/csi2_d_phy_rx_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi_to_axis_0_1/system_csi_to_axis_0_1/system_csi_to_axis_0_1_in_context.xdc] for cell 'system_i/csi_to_axis_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi_to_axis_0_1/system_csi_to_axis_0_1/system_csi_to_axis_0_1_in_context.xdc] for cell 'system_i/csi_to_axis_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0/system_microblaze_0_0_in_context.xdc] for cell 'system_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0/system_microblaze_0_0_in_context.xdc] for cell 'system_i/microblaze_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_mdm_1_0/system_mdm_1_0/system_mdm_1_0_in_context.xdc] for cell 'system_i/mdm_1'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_mdm_1_0/system_mdm_1_0/system_mdm_1_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_mdm_1_0/system_mdm_1_0/system_mdm_1_0_in_context.xdc:4]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_mdm_1_0/system_mdm_1_0/system_mdm_1_0_in_context.xdc] for cell 'system_i/mdm_1'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_200M_0/system_rst_clk_wiz_0_200M_0/system_rst_clk_wiz_0_200M_0_in_context.xdc] for cell 'system_i/rst_clk_wiz_0_200M'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_200M_0/system_rst_clk_wiz_0_200M_0/system_rst_clk_wiz_0_200M_0_in_context.xdc] for cell 'system_i/rst_clk_wiz_0_200M'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_dlmb_v10_0/system_dlmb_v10_0/system_dlmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_dlmb_v10_0/system_dlmb_v10_0/system_dlmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_ilmb_v10_0/system_ilmb_v10_0/system_dlmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_ilmb_v10_0/system_ilmb_v10_0/system_dlmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0_in_context.xdc:2]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0/system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0_in_context.xdc:2]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0/system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_lmb_bram_0/system_lmb_bram_0/system_lmb_bram_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_lmb_bram_0/system_lmb_bram_0/system_lmb_bram_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0/system_axi_iic_0_0_in_context.xdc] for cell 'system_i/axi_iic_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0/system_axi_iic_0_0_in_context.xdc] for cell 'system_i/axi_iic_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2dvp_0_0/system_csi2dvp_0_0/system_csi2dvp_0_0_in_context.xdc] for cell 'system_i/csi2dvp_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2dvp_0_0/system_csi2dvp_0_0/system_csi2dvp_0_0_in_context.xdc] for cell 'system_i/csi2dvp_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0/system_clk_wiz_1_0_in_context.xdc] for cell 'system_i/clk_wiz_1'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0/system_clk_wiz_1_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0/system_clk_wiz_1_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0/system_clk_wiz_1_0_in_context.xdc:6]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0/system_clk_wiz_1_0_in_context.xdc] for cell 'system_i/clk_wiz_1'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_uartlite_0_0/system_axi_uartlite_0_0/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_bayer2rgb_0_0/system_bayer2rgb_0_0/system_bayer2rgb_0_0_in_context.xdc] for cell 'system_i/bayer2rgb_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_bayer2rgb_0_0/system_bayer2rgb_0_0/system_bayer2rgb_0_0_in_context.xdc] for cell 'system_i/bayer2rgb_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc] for cell 'system_i/rgb2dvi_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc] for cell 'system_i/rgb2dvi_0'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_gamma_correction_0_0/system_gamma_correction_0_0/system_gamma_correction_0_0_in_context.xdc] for cell 'system_i/gamma_correction_0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_gamma_correction_0_0/system_gamma_correction_0_0/system_gamma_correction_0_0_in_context.xdc] for cell 'system_i/gamma_correction_0'
+Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'filter_en'. [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'filter_en'. [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc:60]
+Finished Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1056.078 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/csi2dvp_0' at clock pin 's_axis_aclk' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1/system_clk_wiz_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_rxn_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_rxn_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_rxp_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_rxp_0. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for data_rxn_0[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for data_rxn_0[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for data_rxn_0[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for data_rxn_0[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for data_rxp_0[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for data_rxp_0[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for data_rxp_0[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for data_rxp_0[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_clk_n. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_clk_n. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_clk_p. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_clk_p. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_n[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_n[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_n[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_n[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_n[2]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_n[2]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_p[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_p[0]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_p[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_p[1]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_0_data_p[2]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_0_data_p[2]. (constraint file  c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1/system_rgb2dvi_0_1_in_context.xdc, line 18).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/csi2_d_phy_rx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/csi_to_axis_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_clk_wiz_0_200M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_iic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/csi2dvp_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/bayer2rgb_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/gamma_correction_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |system_xbar_0               |         1|
+|2     |system_axi_gpio_0_0         |         1|
+|3     |system_axi_iic_0_0          |         1|
+|4     |system_axi_uartlite_0_0     |         1|
+|5     |system_bayer2rgb_0_0        |         1|
+|6     |system_clk_wiz_0_1          |         1|
+|7     |system_clk_wiz_1_0          |         1|
+|8     |system_csi2_d_phy_rx_0_1    |         1|
+|9     |system_csi2dvp_0_0          |         1|
+|10    |system_csi_to_axis_0_1      |         1|
+|11    |system_gamma_correction_0_0 |         1|
+|12    |system_mdm_1_0              |         1|
+|13    |system_microblaze_0_0       |         1|
+|14    |system_rgb2dvi_0_1          |         1|
+|15    |system_rst_clk_wiz_0_200M_0 |         1|
+|16    |system_dlmb_bram_if_cntlr_0 |         1|
+|17    |system_dlmb_v10_0           |         1|
+|18    |system_ilmb_bram_if_cntlr_0 |         1|
+|19    |system_ilmb_v10_0           |         1|
+|20    |system_lmb_bram_0           |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |system_axi_gpio_0         |     1|
+|2     |system_axi_iic_0          |     1|
+|3     |system_axi_uartlite_0     |     1|
+|4     |system_bayer2rgb_0        |     1|
+|5     |system_clk_wiz_0          |     1|
+|6     |system_clk_wiz_1          |     1|
+|7     |system_csi2_d_phy_rx_0    |     1|
+|8     |system_csi2dvp_0          |     1|
+|9     |system_csi_to_axis_0      |     1|
+|10    |system_dlmb_bram_if_cntlr |     1|
+|11    |system_dlmb_v10           |     1|
+|12    |system_gamma_correction_0 |     1|
+|13    |system_ilmb_bram_if_cntlr |     1|
+|14    |system_ilmb_v10           |     1|
+|15    |system_lmb_bram           |     1|
+|16    |system_mdm_1              |     1|
+|17    |system_microblaze_0       |     1|
+|18    |system_rgb2dvi_0          |     1|
+|19    |system_rst_clk_wiz_0_200M |     1|
+|20    |system_xbar               |     1|
+|21    |IBUF                      |     5|
+|22    |IOBUF                     |     2|
+|23    |OBUF                      |     4|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1056.078 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1056.078 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1056.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:24 . Memory (MB): peak = 1056.078 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 22 16:48:58 2020...

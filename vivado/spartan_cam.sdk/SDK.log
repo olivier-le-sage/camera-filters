@@ -1,0 +1,73 @@
+13:25:24 INFO  : Registering command handlers for SDK TCF services
+13:25:24 INFO  : Launching XSCT server: xsct.bat -interactive D:\xilinx\project\spartan_cam\spartan_cam.sdk\temp_xsdb_launch_script.tcl
+13:25:26 INFO  : XSCT server has started successfully.
+13:25:27 INFO  : Successfully done setting XSCT server connection channel  
+13:25:27 INFO  : Processing command line option -hwspec D:/xilinx/project/spartan_cam/spartan_cam.sdk/system_wrapper.hdf.
+13:25:27 INFO  : Successfully done setting SDK workspace  
+13:26:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 000018627ad001" && level==0} -index 0' command is executed.
+13:26:37 INFO  : FPGA configured successfully with bitstream "D:/xilinx/project/spartan_cam/spartan_cam.sdk/system_wrapper_hw_platform_0/download.bit"
+13:26:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 000018627ad001" && level==0} -index 0' command is executed.
+13:26:42 INFO  : 'fpga -state' command is executed.
+13:26:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:42 INFO  : Jtag cable 'Platform Cable USB 000018627ad001' is selected.
+13:26:42 INFO  : 'jtag frequency' command is executed.
+13:26:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:26:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:42 INFO  : Processor reset is completed for 'microblaze_0'.
+13:26:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:42 INFO  : The application 'D:/xilinx/project/spartan_cam/spartan_cam.sdk/spartan_cam/Debug/spartan_cam.elf' is downloaded to processor 'microblaze_0'.
+13:26:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+dow D:/xilinx/project/spartan_cam/spartan_cam.sdk/spartan_cam/Debug/spartan_cam.elf
+----------------End of Script----------------
+
+13:26:42 INFO  : Memory regions updated for context MicroBlaze #0
+13:26:42 INFO  : Memory regions updated for context MicroBlaze #0
+13:26:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:26:42 INFO  : 'con' command is executed.
+13:26:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+con
+----------------End of Script----------------
+
+13:26:42 INFO  : Launch script is exported to file 'D:\xilinx\project\spartan_cam\spartan_cam.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_spartan_cam.elf_on_local.tcl'
+13:34:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:34:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 000018627ad001" && level==0} -index 0' command is executed.
+13:34:23 INFO  : FPGA configured successfully with bitstream "D:/xilinx/project/spartan_cam/spartan_cam.sdk/system_wrapper_hw_platform_0/download.bit"
+13:34:28 INFO  : Disconnected from the channel tcfchan#1.
+13:34:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB 000018627ad001" && level==0} -index 0' command is executed.
+13:34:30 INFO  : 'fpga -state' command is executed.
+13:34:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:34:30 INFO  : Jtag cable 'Platform Cable USB 000018627ad001' is selected.
+13:34:30 INFO  : 'jtag frequency' command is executed.
+13:34:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:34:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:34:30 INFO  : Processor reset is completed for 'microblaze_0'.
+13:34:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:34:30 INFO  : The application 'D:/xilinx/project/spartan_cam/spartan_cam.sdk/spartan_cam/Debug/spartan_cam.elf' is downloaded to processor 'microblaze_0'.
+13:34:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+dow D:/xilinx/project/spartan_cam/spartan_cam.sdk/spartan_cam/Debug/spartan_cam.elf
+----------------End of Script----------------
+
+13:34:30 INFO  : Memory regions updated for context MicroBlaze #0
+13:34:30 INFO  : Memory regions updated for context MicroBlaze #0
+13:34:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:34:30 INFO  : 'con' command is executed.
+13:34:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Platform Cable USB 000018627ad001"} -index 0
+con
+----------------End of Script----------------
+
+13:34:30 INFO  : Launch script is exported to file 'D:\xilinx\project\spartan_cam\spartan_cam.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_spartan_cam.elf_on_local.tcl'
+13:49:22 INFO  : Disconnected from the channel tcfchan#2.

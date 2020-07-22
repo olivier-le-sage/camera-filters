@@ -1,0 +1,457 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 13:56:07 2019
+# Process ID: 9624
+# Current directory: D:/xilinx/project/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5904 D:\xilinx\project\spartan_cam\spartan_cam.xpr
+# Log file: D:/xilinx/project/spartan_cam/vivado.log
+# Journal file: D:/xilinx/project/spartan_cam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx/project/spartan_cam/spartan_cam.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx/project/spartan_cam/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 944.332 ; gain = 195.637
+update_compile_order -fileset sources_1
+open_bd_design {D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- trenz.biz:user:csi2_d_phy_rx:1.0 - csi2_d_phy_rx_0
+Adding cell -- trenz.biz:user:csi_to_axis:1.0 - csi_to_axis_0
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_200M
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:module_ref:bayer2rgb:1.0 - bayer2rgb_0
+Adding cell -- xilinx.com:module_ref:csi2dvp:1.0 - csi2dvp_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /rst_clk_wiz_0_200M/ext_reset_in(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <system> from BD file <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd>
+report_ip_status -name ip_status 
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /csi2_d_phy_rx_0/in_delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /csi2_d_phy_rx_0/rxbyteclkhs have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_csi2_d_phy_rx_0_1_rxbyteclkhs 
+WARNING: [BD 41-927] Following properties on pin /bayer2rgb_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /csi2dvp_0/s_axis_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_csi2_d_phy_rx_0_1_rxbyteclkhs 
+WARNING: [BD 41-927] Following properties on pin /csi2dvp_0/vid_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+reset_project
+INFO: [BD 41-1983] Skipping reset outputs for the ip rgb2dvi_0, which is locked by user.
+CRITICAL WARNING: [filemgmt 20-1366] Unable to reset target(s) for the following file is locked: D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0.xci
+Locked reason: 
+* IP 'system_rgb2dvi_0_0' was locked by user.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+report_ip_status
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri May 31 13:57:59 2019
+| Host         : DESKTOP-XPS running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 24 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                    | Status         | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                  |                |                     | Log       |                    | Version |               | License    |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| blk_mem_gen_0                    | Up-to-date     | No changes required |  *(1)     | Block Memory       | 8.4     | 8.4 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Generator          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| blk_mem_gen_1                    | Up-to-date     | No changes required |  *(2)     | Block Memory       | 8.4     | 8.4 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Generator          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_axi_gpio_0_0              | Up-to-date     | No changes required |  *(3)     | AXI GPIO           | 2.0     | 2.0 (Rev. 19) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 19)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_axi_iic_0_0               | Up-to-date     | No changes required |  *(4)     | AXI IIC            | 2.0     | 2.0 (Rev. 20) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 20)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_axi_uartlite_0_0          | Up-to-date     | No changes required |  *(5)     | AXI Uartlite       | 2.0     | 2.0 (Rev. 21) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 21)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_bayer2rgb_0_0             | Up-to-date     | No changes required | Change    | bayer2rgb_v1_0     | 1.0     | 1.0 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                |                     | available |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| blk_mem_gen_1[Ref1]              | Up-to-date     | No changes required |  *(6)     | Block Memory       | 8.4     | 8.4 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Generator          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_clk_wiz_0_1               | Up-to-date     | No changes required |  *(7)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_clk_wiz_1_0               | Up-to-date     | No changes required |  *(8)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_csi2_d_phy_rx_0_1         | Up-to-date     | No changes required | Change    | CSI-2 D-PHY RX     | 1.0     | 1.0 (Rev. 36) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     | Log not   | v1_0               | (Rev.   |               |            |                      |
+|                                  |                |                     | available |                    | 36)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_csi2dvp_0_0               | Up-to-date     | No changes required | Change    | csi2dvp_v1_0       | 1.0     | 1.0 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                  |                |                     | available |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| blk_mem_gen_0[Ref1]              | Up-to-date     | No changes required |  *(9)     | Block Memory       | 8.4     | 8.4 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Generator          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_csi_to_axis_0_1           | Up-to-date     | No changes required | Change    | CSI-2 to           | 1.0     | 1.0 (Rev. 47) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     | Log not   | AXI4-Stream v1.0   | (Rev.   |               |            |                      |
+|                                  |                |                     | available |                    | 47)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_dlmb_bram_if_cntlr_0      | Up-to-date     | No changes required |  *(10)    | LMB BRAM           | 4.0     | 4.0 (Rev. 15) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Controller         | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 15)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_dlmb_v10_0                | Up-to-date     | No changes required |  *(11)    | Local Memory Bus   | 3.0     | 3.0 (Rev. 9)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | (LMB) 1.0          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 9)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_ilmb_bram_if_cntlr_0      | Up-to-date     | No changes required |  *(12)    | LMB BRAM           | 4.0     | 4.0 (Rev. 15) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Controller         | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 15)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_ilmb_v10_0                | Up-to-date     | No changes required |  *(13)    | Local Memory Bus   | 3.0     | 3.0 (Rev. 9)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | (LMB) 1.0          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 9)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_lmb_bram_0                | Up-to-date     | No changes required |  *(14)    | Block Memory       | 8.4     | 8.4 (Rev. 1)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Generator          | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 1)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_mdm_1_0                   | Up-to-date     | No changes required |  *(15)    | MicroBlaze Debug   | 3.2     | 3.2 (Rev. 14) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Module (MDM)       | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 14)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_microblaze_0_0            | Up-to-date     | No changes required |  *(16)    | MicroBlaze         | 10.0    | 10.0 (Rev. 7) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 7)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_microblaze_0_axi_periph_0 | Up-to-date     | No changes required |  *(17)    | AXI Interconnect   | 2.1     | 2.1 (Rev. 18) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 18)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_rgb2dvi_0_0               | Locked by user | Unlock IP           | Change    | RGB to DVI Video   | 1.2     | 1.2 (Rev. 7)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     | Log not   | Encoder (Source)   | (Rev.   |               |            |                      |
+|                                  |                |                     | available |                    | 7)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_rst_clk_wiz_0_200M_0      | Up-to-date     | No changes required |  *(18)    | Processor System   | 5.0     | 5.0 (Rev. 12) | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 12)     |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| system_xlconstant_0_0            | Up-to-date     | No changes required |  *(19)    | Constant           | 1.1     | 1.1 (Rev. 5)  | Included   | xc7s15ftgb196-1      |
+|                                  |                |                     |           |                    | (Rev.   |               |            |                      |
+|                                  |                |                     |           |                    | 5)      |               |            |                      |
++----------------------------------+----------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(2) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(3) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(4) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/axi_iic_v2_0/doc/axi_iic_v2_0_changelog.txt
+*(5) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/axi_uartlite_v2_0/doc/axi_uartlite_v2_0_changelog.txt
+*(6) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(7) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(8) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(9) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(10) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(11) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(12) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(13) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(14) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(15) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/mdm_v3_2/doc/mdm_v3_2_changelog.txt
+*(16) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/microblaze_v10_0/doc/microblaze_v10_0_changelog.txt
+*(17) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(18) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(19) c:/Xilinx/Vivado/2018.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+
+
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rgb2dvi_0/TMDS]
+endgroup
+save_bd_design
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_intf_nets rgb2dvi_0_TMDS] [get_bd_nets bayer2rgb_0_data_out] [get_bd_nets bayer2rgb_0_de_out] [get_bd_nets bayer2rgb_0_hsync_out] [get_bd_nets bayer2rgb_0_vsync_out] [get_bd_nets clk_wiz_1_clk_out2] [get_bd_cells rgb2dvi_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.2 rgb2dvi_0
+endgroup
+report_ip_status -name ip_status 
+set_property location {6 1885 41} [get_bd_cells rgb2dvi_0]
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins bayer2rgb_0/data_out] [get_bd_pins rgb2dvi_0/vid_pData]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2dvi_0/vid_pData is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pHSync] [get_bd_pins bayer2rgb_0/hsync_out]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2dvi_0/vid_pHSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pVSync] [get_bd_pins bayer2rgb_0/vsync_out]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2dvi_0/vid_pVSync is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pVDE] [get_bd_pins bayer2rgb_0/de_out]
+WARNING: [BD 41-1306] The connection to interface pin /rgb2dvi_0/vid_pVDE is being overridden by the user. This pin will not be connected as a part of interface connection RGB
+connect_bd_net [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_1/clk_out2]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_ports TMDS_0] [get_bd_intf_pins rgb2dvi_0/TMDS]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /csi2_d_phy_rx_0/in_delay_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /csi2_d_phy_rx_0/rxbyteclkhs have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_csi2_d_phy_rx_0_1_rxbyteclkhs 
+WARNING: [BD 41-927] Following properties on pin /bayer2rgb_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /csi2dvp_0/s_axis_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_csi2_d_phy_rx_0_1_rxbyteclkhs 
+WARNING: [BD 41-927] Following properties on pin /csi2dvp_0/vid_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+generate_target all [get_files  D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block csi2_d_phy_rx_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block csi_to_axis_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_200M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block csi2dvp_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bayer2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+Exporting to file D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.961 ; gain = 212.148
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_0_1] }
+catch { config_ip_cache -export [get_ips -all system_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all system_csi2_d_phy_rx_0_1] }
+catch { config_ip_cache -export [get_ips -all system_csi_to_axis_0_1] }
+catch { config_ip_cache -export [get_ips -all system_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all system_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_clk_wiz_0_200M_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_iic_0_0] }
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rgb2dvi_0_1] }
+export_ip_user_files -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_clk_wiz_0_1_synth_1 system_xlconstant_0_0_synth_1 system_csi2_d_phy_rx_0_1_synth_1 system_csi_to_axis_0_1_synth_1 system_microblaze_0_0_synth_1 system_mdm_1_0_synth_1 system_rst_clk_wiz_0_200M_0_synth_1 system_dlmb_v10_0_synth_1 system_ilmb_v10_0_synth_1 system_dlmb_bram_if_cntlr_0_synth_1 system_ilmb_bram_if_cntlr_0_synth_1 system_lmb_bram_0_synth_1 system_axi_iic_0_0_synth_1 system_clk_wiz_1_0_synth_1 system_axi_uartlite_0_0_synth_1 system_xbar_0_synth_1 system_axi_gpio_0_0_synth_1 system_bayer2rgb_0_0_synth_1 system_csi2dvp_0_0_synth_1 system_rgb2dvi_0_1_synth_1}
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+[Fri May 31 14:00:03 2019] Launched system_clk_wiz_0_1_synth_1, system_xlconstant_0_0_synth_1, system_csi2_d_phy_rx_0_1_synth_1, system_csi_to_axis_0_1_synth_1, system_microblaze_0_0_synth_1, system_mdm_1_0_synth_1, system_rst_clk_wiz_0_200M_0_synth_1, system_dlmb_v10_0_synth_1, system_ilmb_v10_0_synth_1, system_dlmb_bram_if_cntlr_0_synth_1, system_ilmb_bram_if_cntlr_0_synth_1, system_lmb_bram_0_synth_1, system_axi_iic_0_0_synth_1, system_clk_wiz_1_0_synth_1, system_axi_uartlite_0_0_synth_1, system_xbar_0_synth_1, system_axi_gpio_0_0_synth_1, system_bayer2rgb_0_0_synth_1, system_csi2dvp_0_0_synth_1, system_rgb2dvi_0_1_synth_1...
+Run output will be captured here:
+system_clk_wiz_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_0_1_synth_1/runme.log
+system_xlconstant_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xlconstant_0_0_synth_1/runme.log
+system_csi2_d_phy_rx_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/runme.log
+system_csi_to_axis_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi_to_axis_0_1_synth_1/runme.log
+system_microblaze_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_microblaze_0_0_synth_1/runme.log
+system_mdm_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_mdm_1_0_synth_1/runme.log
+system_rst_clk_wiz_0_200M_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rst_clk_wiz_0_200M_0_synth_1/runme.log
+system_dlmb_v10_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_v10_0_synth_1/runme.log
+system_ilmb_v10_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_v10_0_synth_1/runme.log
+system_dlmb_bram_if_cntlr_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_bram_if_cntlr_0_synth_1/runme.log
+system_ilmb_bram_if_cntlr_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_bram_if_cntlr_0_synth_1/runme.log
+system_lmb_bram_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1/runme.log
+system_axi_iic_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_iic_0_0_synth_1/runme.log
+system_clk_wiz_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_1_0_synth_1/runme.log
+system_axi_uartlite_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_uartlite_0_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_bayer2rgb_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_bayer2rgb_0_0_synth_1/runme.log
+system_csi2dvp_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2dvp_0_0_synth_1/runme.log
+system_rgb2dvi_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rgb2dvi_0_1_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.152 ; gain = 13.684
+export_simulation -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -directory D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files -ipstatic_source_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/modelsim} {questa=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/questa} {riviera=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/riviera} {activehdl=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files  D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'system' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_0_1] }
+catch { config_ip_cache -export [get_ips -all system_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all system_csi2_d_phy_rx_0_1] }
+catch { config_ip_cache -export [get_ips -all system_csi_to_axis_0_1] }
+catch { config_ip_cache -export [get_ips -all system_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all system_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_clk_wiz_0_200M_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_iic_0_0] }
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rgb2dvi_0_1] }
+export_ip_user_files -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+create_ip_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.289 ; gain = 0.000
+launch_runs -jobs 8 {system_clk_wiz_0_1_synth_1 system_xlconstant_0_0_synth_1 system_csi2_d_phy_rx_0_1_synth_1 system_csi_to_axis_0_1_synth_1 system_microblaze_0_0_synth_1 system_mdm_1_0_synth_1 system_rst_clk_wiz_0_200M_0_synth_1 system_dlmb_v10_0_synth_1 system_ilmb_v10_0_synth_1 system_dlmb_bram_if_cntlr_0_synth_1 system_ilmb_bram_if_cntlr_0_synth_1 system_lmb_bram_0_synth_1 system_axi_iic_0_0_synth_1 system_clk_wiz_1_0_synth_1 system_axi_uartlite_0_0_synth_1 system_xbar_0_synth_1 system_axi_gpio_0_0_synth_1 system_bayer2rgb_0_0_synth_1 system_csi2dvp_0_0_synth_1 system_rgb2dvi_0_1_synth_1}
+[Fri May 31 14:01:03 2019] Launched system_clk_wiz_0_1_synth_1, system_xlconstant_0_0_synth_1, system_csi2_d_phy_rx_0_1_synth_1, system_csi_to_axis_0_1_synth_1, system_microblaze_0_0_synth_1, system_mdm_1_0_synth_1, system_rst_clk_wiz_0_200M_0_synth_1, system_dlmb_v10_0_synth_1, system_ilmb_v10_0_synth_1, system_dlmb_bram_if_cntlr_0_synth_1, system_ilmb_bram_if_cntlr_0_synth_1, system_lmb_bram_0_synth_1, system_axi_iic_0_0_synth_1, system_clk_wiz_1_0_synth_1, system_axi_uartlite_0_0_synth_1, system_xbar_0_synth_1, system_axi_gpio_0_0_synth_1, system_bayer2rgb_0_0_synth_1, system_csi2dvp_0_0_synth_1, system_rgb2dvi_0_1_synth_1...
+Run output will be captured here:
+system_clk_wiz_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_0_1_synth_1/runme.log
+system_xlconstant_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xlconstant_0_0_synth_1/runme.log
+system_csi2_d_phy_rx_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/runme.log
+system_csi_to_axis_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi_to_axis_0_1_synth_1/runme.log
+system_microblaze_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_microblaze_0_0_synth_1/runme.log
+system_mdm_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_mdm_1_0_synth_1/runme.log
+system_rst_clk_wiz_0_200M_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rst_clk_wiz_0_200M_0_synth_1/runme.log
+system_dlmb_v10_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_v10_0_synth_1/runme.log
+system_ilmb_v10_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_v10_0_synth_1/runme.log
+system_dlmb_bram_if_cntlr_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_bram_if_cntlr_0_synth_1/runme.log
+system_ilmb_bram_if_cntlr_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_bram_if_cntlr_0_synth_1/runme.log
+system_lmb_bram_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1/runme.log
+system_axi_iic_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_iic_0_0_synth_1/runme.log
+system_clk_wiz_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_1_0_synth_1/runme.log
+system_axi_uartlite_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_uartlite_0_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_bayer2rgb_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_bayer2rgb_0_0_synth_1/runme.log
+system_csi2dvp_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2dvp_0_0_synth_1/runme.log
+system_rgb2dvi_0_1_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rgb2dvi_0_1_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1310.289 ; gain = 0.000
+export_simulation -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -directory D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files -ipstatic_source_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/modelsim} {questa=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/questa} {riviera=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/riviera} {activehdl=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_ilmb_v10_0, cache-ID = 3bd82eb2e5c40ace; cache size = 1.546 MB.
+[Fri May 31 14:02:58 2019] Launched system_microblaze_0_0_synth_1, system_mdm_1_0_synth_1, system_rst_clk_wiz_0_200M_0_synth_1, system_lmb_bram_0_synth_1, system_axi_iic_0_0_synth_1, system_clk_wiz_1_0_synth_1, system_axi_uartlite_0_0_synth_1, system_xbar_0_synth_1, system_axi_gpio_0_0_synth_1, system_bayer2rgb_0_0_synth_1, system_csi2dvp_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_microblaze_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_microblaze_0_0_synth_1/runme.log
+system_mdm_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_mdm_1_0_synth_1/runme.log
+system_rst_clk_wiz_0_200M_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rst_clk_wiz_0_200M_0_synth_1/runme.log
+system_lmb_bram_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1/runme.log
+system_axi_iic_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_iic_0_0_synth_1/runme.log
+system_clk_wiz_1_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_1_0_synth_1/runme.log
+system_axi_uartlite_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_uartlite_0_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_bayer2rgb_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_bayer2rgb_0_0_synth_1/runme.log
+system_csi2dvp_0_0_synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2dvp_0_0_synth_1/runme.log
+synth_1: D:/xilinx/project/spartan_cam/spartan_cam.runs/synth_1/runme.log
+[Fri May 31 14:02:59 2019] Launched impl_1...
+Run output will be captured here: D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1332.422 ; gain = 9.203
+regenerate_bd_layout
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+save_bd_design
+Wrote  : <D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 14:09:41 2019...

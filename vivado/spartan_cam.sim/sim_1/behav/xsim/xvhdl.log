@@ -1,0 +1,53 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'phy_clock_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'line_if'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'csi2_d_phy_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_csi2_d_phy_rx_0_1/sim/system_csi2_d_phy_rx_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_csi2_d_phy_rx_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/7939/hdl/csi2_parser.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'csi2_parser'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/7939/hdl/lane_align.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lane_align'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/7939/hdl/lane_merge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lane_merge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/7939/hdl/csi_to_axis_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'csi_to_axis_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_csi_to_axis_0_1/sim/system_csi_to_axis_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_csi_to_axis_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_microblaze_0_0/sim/system_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_microblaze_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_mdm_1_0/sim/system_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_mdm_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_rst_clk_wiz_0_200M_0/sim/system_rst_clk_wiz_0_200M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_rst_clk_wiz_0_200M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_dlmb_v10_0/sim/system_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_dlmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_ilmb_v10_0/sim/system_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_ilmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_dlmb_bram_if_cntlr_0/sim/system_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_dlmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_ilmb_bram_if_cntlr_0/sim/system_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_ilmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_axi_iic_0_0/sim/system_axi_iic_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_axi_iic_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_axi_uartlite_0_0/sim/system_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_axi_uartlite_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/ClockGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ClockGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncAsync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsyncReset.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ResetBridge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/DVI_Constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/OutputSERDES.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OutputSERDES'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/TMDS_Encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TMDS_Encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/bd5a/src/rgb2dvi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rgb2dvi'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.ip_user_files/bd/system/ip/system_rgb2dvi_0_1/sim/system_rgb2dvi_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'system_rgb2dvi_0_1'

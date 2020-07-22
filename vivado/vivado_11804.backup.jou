@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 13:49:53 2019
+# Process ID: 11804
+# Current directory: D:/xilinx/project/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16208 D:\xilinx\project\spartan_cam\spartan_cam.xpr
+# Log file: D:/xilinx/project/spartan_cam/vivado.log
+# Journal file: D:/xilinx/project/spartan_cam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx/project/spartan_cam/spartan_cam.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  D:/xilinx/project/spartan_cam/ip [current_project]
+update_ip_catalog
+update_ip_catalog
+reset_project
+open_bd_design {D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  D:/xilinx/project/spartan_cam/ip [current_project]
+update_ip_catalog
+validate_bd_design -force
+report_ip_status -name ip_status 
+set_property LOCK_UPGRADE 1 [get_bd_cells /rgb2dvi_0]
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  D:/xilinx/project/spartan_cam/ip [current_project]
+update_ip_catalog
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+validate_bd_design -force
+save_bd_design

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_clk_wiz_0_1_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xlconstant_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_csi2_d_phy_rx_0_1_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_csi_to_axis_0_1_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi_to_axis_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_microblaze_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_mdm_1_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_clk_wiz_0_200M_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rst_clk_wiz_0_200M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_dlmb_v10_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_v10_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="system_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_lmb_bram_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_iic_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clk_wiz_1_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_uartlite_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_gpio_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_bayer2rgb_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_bayer2rgb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_csi2dvp_0_0_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_csi2dvp_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rgb2dvi_0_1_synth_1" LaunchDir="D:/xilinx/project/spartan_cam/spartan_cam.runs/system_rgb2dvi_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

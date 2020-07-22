@@ -1,0 +1,25 @@
+13:33:59 **** Incremental Build of configuration Debug for project spartan_cam ****
+make all 
+make: Nothing to be done for `all'.
+13:34:27 **** Incremental Build of configuration Release for project spartan_cam ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -I../../spartan_cam_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:155:5: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u8 data;
+     ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: spartan_cam.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spartan_cam_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spartan_cam.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: spartan_cam.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size spartan_cam.elf  |tee "spartan_cam.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3456	    624	   3104	   7184	   1c10	spartan_cam.elf
+'Finished building: spartan_cam.elf.size'
+' '

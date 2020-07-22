@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jul 17 13:37:33 2020
+# Process ID: 4652
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1
+# Command line: vivado.exe -log system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1/system_xbar_0.vds
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Olivier/Xilinx_Vitis/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_xbar_0, cache-ID = 531f851100df9a1f.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 13:38:47 2020...

@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 13:56:07 2019
+# Process ID: 9624
+# Current directory: D:/xilinx/project/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5904 D:\xilinx\project\spartan_cam\spartan_cam.xpr
+# Log file: D:/xilinx/project/spartan_cam/vivado.log
+# Journal file: D:/xilinx/project/spartan_cam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx/project/spartan_cam/spartan_cam.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+validate_bd_design -force
+reset_project
+report_ip_status -name ip_status 
+report_ip_status
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rgb2dvi_0/TMDS]
+endgroup
+save_bd_design
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_intf_nets rgb2dvi_0_TMDS] [get_bd_nets bayer2rgb_0_data_out] [get_bd_nets bayer2rgb_0_de_out] [get_bd_nets bayer2rgb_0_hsync_out] [get_bd_nets bayer2rgb_0_vsync_out] [get_bd_nets clk_wiz_1_clk_out2] [get_bd_cells rgb2dvi_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.2 rgb2dvi_0
+endgroup
+report_ip_status -name ip_status 
+set_property location {6 1885 41} [get_bd_cells rgb2dvi_0]
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins bayer2rgb_0/data_out] [get_bd_pins rgb2dvi_0/vid_pData]
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pHSync] [get_bd_pins bayer2rgb_0/hsync_out]
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pVSync] [get_bd_pins bayer2rgb_0/vsync_out]
+connect_bd_net [get_bd_pins rgb2dvi_0/vid_pVDE] [get_bd_pins bayer2rgb_0/de_out]
+connect_bd_net [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins clk_wiz_1/clk_out2]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_ports TMDS_0] [get_bd_intf_pins rgb2dvi_0/TMDS]
+regenerate_bd_layout
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_0_1] }
+catch { config_ip_cache -export [get_ips -all system_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all system_csi2_d_phy_rx_0_1] }
+catch { config_ip_cache -export [get_ips -all system_csi_to_axis_0_1] }
+catch { config_ip_cache -export [get_ips -all system_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all system_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_clk_wiz_0_200M_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_iic_0_0] }
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rgb2dvi_0_1] }
+export_ip_user_files -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_clk_wiz_0_1_synth_1 system_xlconstant_0_0_synth_1 system_csi2_d_phy_rx_0_1_synth_1 system_csi_to_axis_0_1_synth_1 system_microblaze_0_0_synth_1 system_mdm_1_0_synth_1 system_rst_clk_wiz_0_200M_0_synth_1 system_dlmb_v10_0_synth_1 system_ilmb_v10_0_synth_1 system_dlmb_bram_if_cntlr_0_synth_1 system_ilmb_bram_if_cntlr_0_synth_1 system_lmb_bram_0_synth_1 system_axi_iic_0_0_synth_1 system_clk_wiz_1_0_synth_1 system_axi_uartlite_0_0_synth_1 system_xbar_0_synth_1 system_axi_gpio_0_0_synth_1 system_bayer2rgb_0_0_synth_1 system_csi2dvp_0_0_synth_1 system_rgb2dvi_0_1_synth_1}
+export_simulation -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -directory D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files -ipstatic_source_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/modelsim} {questa=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/questa} {riviera=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/riviera} {activehdl=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files  D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_0_1] }
+catch { config_ip_cache -export [get_ips -all system_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all system_csi2_d_phy_rx_0_1] }
+catch { config_ip_cache -export [get_ips -all system_csi_to_axis_0_1] }
+catch { config_ip_cache -export [get_ips -all system_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all system_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all system_rst_clk_wiz_0_200M_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all system_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all system_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_iic_0_0] }
+catch { config_ip_cache -export [get_ips -all system_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_uartlite_0_0] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all system_rgb2dvi_0_1] }
+export_ip_user_files -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_clk_wiz_0_1_synth_1 system_xlconstant_0_0_synth_1 system_csi2_d_phy_rx_0_1_synth_1 system_csi_to_axis_0_1_synth_1 system_microblaze_0_0_synth_1 system_mdm_1_0_synth_1 system_rst_clk_wiz_0_200M_0_synth_1 system_dlmb_v10_0_synth_1 system_ilmb_v10_0_synth_1 system_dlmb_bram_if_cntlr_0_synth_1 system_ilmb_bram_if_cntlr_0_synth_1 system_lmb_bram_0_synth_1 system_axi_iic_0_0_synth_1 system_clk_wiz_1_0_synth_1 system_axi_uartlite_0_0_synth_1 system_xbar_0_synth_1 system_axi_gpio_0_0_synth_1 system_bayer2rgb_0_0_synth_1 system_csi2dvp_0_0_synth_1 system_rgb2dvi_0_1_synth_1}
+export_simulation -of_objects [get_files D:/xilinx/project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] -directory D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files -ipstatic_source_dir D:/xilinx/project/spartan_cam/spartan_cam.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/modelsim} {questa=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/questa} {riviera=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/riviera} {activehdl=D:/xilinx/project/spartan_cam/spartan_cam.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+regenerate_bd_layout
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/xilinx/project/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+save_bd_design

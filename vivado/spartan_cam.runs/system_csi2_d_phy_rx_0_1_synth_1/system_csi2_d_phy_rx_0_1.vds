@@ -1,0 +1,404 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jul 15 12:36:28 2020
+# Process ID: 16216
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1
+# Command line: vivado.exe -log system_csi2_d_phy_rx_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_csi2_d_phy_rx_0_1.tcl
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/system_csi2_d_phy_rx_0_1.vds
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_csi2_d_phy_rx_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:29 . Memory (MB): peak = 630.754 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Olivier/Xilinx_Vitis/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 661.523 ; gain = 30.770
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.cache/ip 
+Command: synth_design -top system_csi2_d_phy_rx_0_1 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15812
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_csi2_d_phy_rx_0_1' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/synth/system_csi2_d_phy_rx_0_1.vhd:94]
+	Parameter C_NUM_LANES bound to: 2 - type: integer 
+	Parameter C_NUM_LP_LANES bound to: 1 - type: integer 
+	Parameter C_D0_SWAP bound to: 0 - type: bool 
+	Parameter C_D1_SWAP bound to: 0 - type: bool 
+	Parameter C_D2_SWAP bound to: 0 - type: bool 
+	Parameter C_D3_SWAP bound to: 0 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_ADD_IDELAYCTRL bound to: 1 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'csi2_d_phy_rx' declared at 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:11' bound to instance 'U0' of component 'csi2_d_phy_rx' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/synth/system_csi2_d_phy_rx_0_1.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'csi2_d_phy_rx' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:67]
+	Parameter C_NUM_LANES bound to: 2 - type: integer 
+	Parameter C_NUM_LP_LANES bound to: 1 - type: integer 
+	Parameter C_D0_SWAP bound to: 0 - type: bool 
+	Parameter C_D1_SWAP bound to: 0 - type: bool 
+	Parameter C_D2_SWAP bound to: 0 - type: bool 
+	Parameter C_D3_SWAP bound to: 0 - type: bool 
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_ADD_IDELAYCTRL bound to: 1 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'IdlyCtrl_inst_0' to cell 'IDELAYCTRL' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:131]
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_ACC_LIMIT bound to: 1000000 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'phy_clock_system' declared at 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:11' bound to instance 'clock_system_inst' of component 'phy_clock_system' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'phy_clock_system' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:37]
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_ACC_LIMIT bound to: 1000000 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clk_ibufgds_inst' to cell 'IBUFGDS' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:84]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: CLOCK - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE2_inst' to cell 'IDELAYE2' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:108]
+	Parameter CE_TYPE_CE0 bound to: SYNC - type: string 
+	Parameter CE_TYPE_CE1 bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: 0 - type: bool 
+	Parameter PRESELECT_I1 bound to: 0 - type: bool 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'BUFGCTRL_inst' to cell 'BUFGCTRL' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:136]
+	Parameter CE_TYPE bound to: ASYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'BUFMRCE_inst' to cell 'BUFMRCE' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:278]
+INFO: [Synth 8-113] binding component instance 'BUFIO_inst' to cell 'BUFIO' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:289]
+	Parameter BUFR_DIVIDE bound to: 4 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'BUFR_inst' to cell 'BUFR' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:297]
+INFO: [Synth 8-113] binding component instance 'usr_BUFG_inst' to cell 'BUFG' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:310]
+INFO: [Synth 8-256] done synthesizing module 'phy_clock_system' (1#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/phy_clock_system.vhd:37]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'line_if' declared at 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:11' bound to instance 'line_if_inst' of component 'line_if' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'line_if' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:25]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'd_ibufds_inst' to cell 'IBUFDS' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:33]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst' to cell 'ISERDESE2' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'line_if' (2#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:25]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'line_if' declared at 'c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/line_if.vhd:11' bound to instance 'line_if_inst' of component 'line_if' [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:169]
+INFO: [Synth 8-256] done synthesizing module 'csi2_d_phy_rx' (3#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ipshared/e93c/hdl/csi2_d_phy_rx.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'system_csi2_d_phy_rx_0_1' (4#1) [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/synth/system_csi2_d_phy_rx_0_1.vhd:94]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:42 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1139.840 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/clock_system_inst/dly_gen.BUFGCTRL_inst' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/hdl/csi2_d_phy_rx.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/hdl/csi2_d_phy_rx.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1139.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:02:22 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:02:23 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:02:23 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'dly_gen.sm_state_reg' in module 'phy_clock_system'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_check |                              000 |                              000
+            st_good_wait |                              001 |                              010
+            st_find_good |                              010 |                              001
+             st_find_bad |                              011 |                              011
+             st_calk_dly |                              100 |                              101
+              st_set_dly |                              101 |                              110
+             st_set_wait |                              110 |                              111
+             st_bad_wait |                              111 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dly_gen.sm_state_reg' using encoding 'sequential' in module 'phy_clock_system'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:02:33 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 1     
+	   8 Input   13 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:40 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:03:03 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:03:03 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:03:03 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFGCTRL   |     1|
+|3     |BUFIO      |     1|
+|4     |BUFMRCE    |     1|
+|5     |BUFR       |     1|
+|6     |CARRY4     |    16|
+|7     |IDELAYCTRL |     1|
+|8     |IDELAYE2   |     1|
+|9     |ISERDESE2  |     2|
+|10    |LUT1       |    17|
+|11    |LUT2       |    22|
+|12    |LUT3       |    17|
+|13    |LUT4       |     9|
+|14    |LUT5       |     9|
+|15    |LUT6       |    16|
+|16    |FDRE       |   131|
+|17    |FDSE       |    13|
+|18    |IBUFDS     |     2|
+|19    |IBUFGDS    |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:03:01 . Memory (MB): peak = 1139.840 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:03:30 . Memory (MB): peak = 1139.840 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1139.840 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'U0/clock_system_inst/dly_gen.BUFGCTRL_inst' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1139.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:04:10 . Memory (MB): peak = 1139.840 ; gain = 478.316
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/system_csi2_d_phy_rx_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_csi2_d_phy_rx_0_1, cache-ID = b109204aa35119e6
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1/system_csi2_d_phy_rx_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_csi2_d_phy_rx_0_1_utilization_synth.rpt -pb system_csi2_d_phy_rx_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 15 12:42:09 2020...
