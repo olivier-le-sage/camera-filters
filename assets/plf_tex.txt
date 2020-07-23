@@ -1,0 +1,21 @@
+\begin{align*}
+f(x)_{\gamma=2.2}\; = \left\{\begin{matrix}
+x = 0, & 0 \\
+0<x\leq 11, & 4x+20 \\ 
+11<x\leq 40, & 2x+35 \\ 
+40<x\leq 113, & x+70\\ 
+113<x\leq 255, & \frac{x}{2}+125
+\end{matrix}\right.
+
+&\;\;\;\;\;\;\;\;\;\;
+
+f(x)_{\gamma=1.4}\; = \left\{\begin{matrix}
+0\leq x\leq 3, & 4x \\ 
+3<x\leq 18, & 2x+5 \\ 
+18<x\leq 33 & x+21\\ 
+33<x\leq 153 & x+28\\ 
+153<x\leq 187 & \frac{x}{2}+105\\ 
+187<x\leq 227 & \frac{x}{2}+115\\ 
+227<x\leq 255 & \frac{x}{2}+124
+\end{matrix}\right.
+\end{}
