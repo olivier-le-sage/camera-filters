@@ -13,7 +13,8 @@ filter circuits in Verilog that would allow me to manipulate the image.
 
 This code was implemented within a complete camera pipeline which streams
 frames from a MIPI/CSI interface to an HDMI output in real time. The filter
-block is inserted before the HDMI interface as shown in the diagram above.
+block is inserted between the demoisaicing stage (bayer2rgb) and the
+HDMI interface (rgb2dvi), as shown in the diagram above.
 
 ## Filters
 
@@ -44,12 +45,12 @@ Contrast is adjusted using a simple linear function, clipped to the 0 to 255 ran
 
 ![contrast piecewise linear function](assets/contrast_plf_def.png?raw=true "")
 
-### Brightness Increase over the RGB colorspace
+### Brightness Increase over the RGB Color-space
 
 Brightness is increased by using a simple formula. Each color component is
 increased by 25% and clipped to 255 if required.
 
-### Brightness Increase over the Y'UV (YCbCr) colorspace
+### Brightness Increase over the Y'UV (YCbCr) Color-space
 
 Compared to simply multiplying RGB, Y'UV goes one step further by assigning
 weights to each color component (as a way of accounting for how red and green
