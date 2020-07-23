@@ -68,6 +68,7 @@ circuit. It may be synthesizable, but it would take up a lot of die/FPGA area
 an approximation of the transforms can be used.
 
 ![rgb2yuv](assets/approx_rgb2yuv_mat.png?raw=true "")
+
 ![yuv2rgb](assets/approx_yuv2rgb_mat.png?raw=true "")
 
 The above matrix coefficient values were obtained by multiplying the previous
