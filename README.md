@@ -63,9 +63,9 @@ which boils down to the following matrix multiplications:
 
 ![theoretical yuv to rgb matrices](assets/BT601_conversion_matrices.PNG?raw=true "")
 
-Signed floating-point matrix multiplication is a difficult task in a digital
+Signed floating-point matrix multiplication is a hard task in a digital
 circuit. It may be synthesizable, but it would take up a lot of die/FPGA area
-(or a lot of DSP slices), and be slow. Therefore, to create a more efficient design,
+(or a lot of DSP slices), and it would be slow. Therefore, to create a more efficient design,
 an approximation of the transforms can be used.
 
 ![rgb2yuv](assets/approx_rgb2yuv_mat.png?raw=true "")
@@ -78,10 +78,11 @@ This is equivalent to the following equations:
 
 ![yuv and rgb equations](assets/equations.png?raw=true "")
 
+An even more accurate implementation could be obtained by multiplying by 64, or even 128.
 These equations, in turn, can be implemented very efficiently in RTL by using
 a combination of signed addition/subtraction and arithmetic left/right shifts.
-Despite the relative complexity of the calculations, the delays were found to be
-minimal.
+Despite the relative complexity of normal matrix multiplication, using this approximation
+approach, the delays become minimal.
 
 Once in the Y'UV space, the value of Y' (the luma, or luminance) can be
 manipulated to improve image quality.
@@ -102,5 +103,6 @@ to reduce the LUT usage.
 ## References and Further Reading
 
 * [Matrices for BT.601 SDTV YUV <-> RGB conversion, from Wikipedia](https://en.wikipedia.org/wiki/YUV#SDTV_with_BT.601)
-<!-- * Link to that paper I found
-* Link to the repo for the SEA example I used -->
+* [Gamma correction by Texas Instruments, implemented on a  DSP](https://www.ti.com/lit/an/spra361/spra361.pdf?ts=1594995585720&ref_url=https%253A%252F%252Fwww.google.com%252F)
+* [A paper with a similar (but different) approach to color-space conversion](https://www.researchgate.net/publication/263928530_A_Novel_FPGA_Based_Reconfigurable_Architecture_for_Image_Color_Space_Conversion)
+<!-- Link to the repo for the SEA example I used -->
