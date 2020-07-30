@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Jul 15 12:42:59 2020
+// Date        : Wed Jul 15 12:42:54 2020
 // Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_microblaze_0_0/system_microblaze_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top system_microblaze_0_0 -prefix
+//               system_microblaze_0_0_ system_microblaze_0_0_stub.v
 // Design      : system_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s15ftgb196-1

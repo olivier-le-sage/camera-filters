@@ -1,6 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.srcs/sources_1/new/gamma_correction.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gamma_correction
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.srcs/sim_1/new/gamma_correction_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gamma_correction_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.srcs/sources_1/new/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.srcs/sim_1/new/button_debounce_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce_tb

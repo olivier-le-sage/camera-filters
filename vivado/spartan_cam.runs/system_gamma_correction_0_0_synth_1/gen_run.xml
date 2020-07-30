@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="system_gamma_correction_0_0_synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595450649">
+<GenRun Id="system_gamma_correction_0_0_synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595956307">
   <File Type="PA-TCL" Name="system_gamma_correction_0_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_gamma_correction_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_gamma_correction_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="system_gamma_correction_0_0.vds"/>
   <File Type="RDS-UTIL" Name="system_gamma_correction_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="system_gamma_correction_0_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="system_gamma_correction_0_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_gamma_correction_0_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_gamma_correction_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_gamma_correction_0_0">
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_gamma_correction_0_0/system_gamma_correction_0_0.xci">
       <FileInfo>
@@ -43,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

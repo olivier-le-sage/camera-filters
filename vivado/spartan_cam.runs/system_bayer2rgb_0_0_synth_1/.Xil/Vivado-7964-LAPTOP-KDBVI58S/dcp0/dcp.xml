@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Checkpoint Version="14" Minor="0">
+	<BUILD_NUMBER Name="2902540"/>
+	<FULL_BUILD Name="SW Build 2902540 on Wed May 27 19:54:49 MDT 2020"/>
+	<PRODUCT Name="Vivado v2020.1 (64-bit)"/>
+	<Part Name="xc7s15ftgb196-1"/>
+	<Top Name="system_bayer2rgb_0_0"/>
+	<RenamePrefix Name="system_bayer2rgb_0_0_"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<BlockRunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<XPMLIBRARY Name="XPM_CDC"/>
+	<XPMLIBRARY Name="XPM_MEMORY"/>
+	<File Type="VERILOG_STUB" Name="system_bayer2rgb_0_0_stub.v" ModTime="1595738266"/>
+	<File Type="VHDL_STUB" Name="system_bayer2rgb_0_0_stub.vhdl" ModTime="1595738266"/>
+	<File Type="XDC_IN_CONTEXT" Name="system_bayer2rgb_0_0_in_context.xdc" ModTime="1595738266"/>
+	<File Type="SHAPE" Name="system_bayer2rgb_0_0.shape" ModTime="1595738266"/>
+	<File Type="EDIF" Name="system_bayer2rgb_0_0.edf" ModTime="1595738266"/>
+	<File Type="XN" Name="system_bayer2rgb_0_0.xn" ModTime="1595738266"/>
+	<File Type="INCR" Name="system_bayer2rgb_0_0.incr" ModTime="1595738266"/>
+	<File Type="RDA" Name="system_bayer2rgb_0_0.rda" ModTime="1595738266"/>
+	<File Type="WDF" Name="system_bayer2rgb_0_0.wdf" ModTime="1595738266"/>
+</Checkpoint>
+

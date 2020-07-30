@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595450651">
+<GenRun Id="synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595956308">
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="system_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="system_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="system_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
@@ -37,6 +40,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/gamma_correction.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/button_debounce.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -82,7 +92,6 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="system_wrapper"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -108,8 +117,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="system_csi2_d_phy_rx_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_csi2_d_phy_rx_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rgb2dvi_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_clk_wiz_0_1"/>
@@ -120,11 +129,13 @@
   <BlockFileSet Type="BlockSrcs" Name="system_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_gamma_correction_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_button_debounce_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_csi2dvp_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_bayer2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_button_debounce_1_0"/>
 </GenRun>

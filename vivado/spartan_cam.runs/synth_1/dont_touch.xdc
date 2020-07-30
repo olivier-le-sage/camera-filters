@@ -84,6 +84,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 |
 # IP: bd/system/ip/system_gamma_correction_0_0/system_gamma_correction_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_gamma_correction_0_0 || ORIG_REF_NAME==system_gamma_correction_0_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_button_debounce_0_0/system_button_debounce_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_button_debounce_0_0 || ORIG_REF_NAME==system_button_debounce_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_button_debounce_1_0/system_button_debounce_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_button_debounce_1_0 || ORIG_REF_NAME==system_button_debounce_1_0} -quiet] -quiet
+
 # XDC: ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
 
 # XDC: ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc

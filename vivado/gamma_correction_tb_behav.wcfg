@@ -3,50 +3,37 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="gamma_correction_tb_behav.wdb" id="1">
+      <db_ref path="button_debounce_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="gamma_correction_tb" />
+            <top_module name="button_debounce_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="5420850fs"></ZoomStartTime>
-      <ZoomEndTime time="6409107fs"></ZoomEndTime>
-      <Cursor1Time time="6124284fs"></Cursor1Time>
+      <ZoomStartTime time="973950fs"></ZoomStartTime>
+      <ZoomEndTime time="2115461fs"></ZoomEndTime>
+      <Cursor1Time time="15000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
-   <wvobject fp_name="/gamma_correction_tb/rgb_data_in" type="array">
-      <obj_property name="ElementShortName">rgb_data_in[23:0]</obj_property>
-      <obj_property name="ObjectShortName">rgb_data_in[23:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/button_debounce_tb/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
    </wvobject>
-   <wvobject fp_name="/gamma_correction_tb/rgb_data_out" type="array">
-      <obj_property name="ElementShortName">rgb_data_out[23:0]</obj_property>
-      <obj_property name="ObjectShortName">rgb_data_out[23:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/button_debounce_tb/button_event" type="logic">
+      <obj_property name="ElementShortName">button_event</obj_property>
+      <obj_property name="ObjectShortName">button_event</obj_property>
    </wvobject>
-   <wvobject fp_name="/gamma_correction_tb/key" type="array">
-      <obj_property name="ElementShortName">key[1:0]</obj_property>
-      <obj_property name="ObjectShortName">key[1:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+   <wvobject fp_name="/button_debounce_tb/debounced" type="logic">
+      <obj_property name="ElementShortName">debounced</obj_property>
+      <obj_property name="ObjectShortName">debounced</obj_property>
    </wvobject>
-   <wvobject fp_name="/gamma_correction_tb/state" type="array">
-      <obj_property name="ElementShortName">state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">state[2:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/gamma_correction_tb/i" type="array">
-      <obj_property name="ElementShortName">i[31:0]</obj_property>
-      <obj_property name="ObjectShortName">i[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/gamma_correction_tb/period" type="array">
-      <obj_property name="ElementShortName">period[31:0]</obj_property>
-      <obj_property name="ObjectShortName">period[31:0]</obj_property>
+   <wvobject fp_name="/button_debounce_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
 </wave_config>

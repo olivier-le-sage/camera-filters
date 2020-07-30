@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Jul 15 12:42:02 2020
+// Date        : Wed Jul 15 12:41:58 2020
 // Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_csi2_d_phy_rx_0_1/system_csi2_d_phy_rx_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top system_csi2_d_phy_rx_0_1 -prefix
+//               system_csi2_d_phy_rx_0_1_ system_csi2_d_phy_rx_0_1_sim_netlist.v
 // Design      : system_csi2_d_phy_rx_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,163 +12,10 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_csi2_d_phy_rx_0_1,csi2_d_phy_rx,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "csi2_d_phy_rx,Vivado 2020.1" *) 
-(* NotValidForBitStream *)
-module system_csi2_d_phy_rx_0_1
-   (in_delay_clk,
-    clk_rxp,
-    clk_rxn,
-    data_rxp,
-    data_rxn,
-    data_lp_p,
-    data_lp_n,
-    trig_req,
-    trig_ack,
-    rxbyteclkhs,
-    cl_enable,
-    cl_stopstate,
-    cl_rxclkactivehs,
-    dl0_enable,
-    dl0_rxactivehs,
-    dl0_rxvalidhs,
-    dl0_rxsynchs,
-    dl0_datahs,
-    dl1_enable,
-    dl1_rxactivehs,
-    dl1_rxvalidhs,
-    dl1_rxsynchs,
-    dl1_datahs,
-    dl2_enable,
-    dl2_rxactivehs,
-    dl2_rxvalidhs,
-    dl2_rxsynchs,
-    dl2_datahs,
-    dl3_enable,
-    dl3_rxactivehs,
-    dl3_rxvalidhs,
-    dl3_rxsynchs,
-    dl3_datahs);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 in_delay_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME in_delay_clk, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *) input in_delay_clk;
-  input clk_rxp;
-  input clk_rxn;
-  input [1:0]data_rxp;
-  input [1:0]data_rxn;
-  input [0:0]data_lp_p;
-  input [0:0]data_lp_n;
-  (* x_interface_info = "xilinx.com:interface:trigger:1.0 data_err TRIG" *) input trig_req;
-  (* x_interface_info = "xilinx.com:interface:trigger:1.0 data_err ACK" *) output trig_ack;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 rxbyteclkhs CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME rxbyteclkhs, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_csi2_d_phy_rx_0_1_rxbyteclkhs" *) output rxbyteclkhs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_ENABLE" *) input cl_enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_STOPSTATE" *) output cl_stopstate;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_RXCLKACTIVEHS" *) output cl_rxclkactivehs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_ENABLE" *) input dl0_enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXACTIVEHS" *) output dl0_rxactivehs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXVALIDHS" *) output dl0_rxvalidhs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXSYNCHS" *) output dl0_rxsynchs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXDATAHS" *) output [7:0]dl0_datahs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_ENABLE" *) input dl1_enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXACTIVEHS" *) output dl1_rxactivehs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXVALIDHS" *) output dl1_rxvalidhs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXSYNCHS" *) output dl1_rxsynchs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXDATAHS" *) output [7:0]dl1_datahs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_ENABLE" *) input dl2_enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXACTIVEHS" *) output dl2_rxactivehs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXVALIDHS" *) output dl2_rxvalidhs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXSYNCHS" *) output dl2_rxsynchs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXDATAHS" *) output [7:0]dl2_datahs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_ENABLE" *) input dl3_enable;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXACTIVEHS" *) output dl3_rxactivehs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXVALIDHS" *) output dl3_rxvalidhs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXSYNCHS" *) output dl3_rxsynchs;
-  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXDATAHS" *) output [7:0]dl3_datahs;
-
-  wire cl_enable;
-  wire cl_rxclkactivehs;
-  wire cl_stopstate;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_rxn;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_rxp;
-  wire [0:0]data_lp_n;
-  wire [0:0]data_lp_p;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire [1:0]data_rxn;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire [1:0]data_rxp;
-  wire [7:0]dl0_datahs;
-  wire dl0_enable;
-  wire dl0_rxactivehs;
-  wire dl0_rxsynchs;
-  wire dl0_rxvalidhs;
-  wire [7:0]dl1_datahs;
-  wire dl1_enable;
-  wire dl1_rxactivehs;
-  wire dl1_rxsynchs;
-  wire dl1_rxvalidhs;
-  wire [7:0]dl2_datahs;
-  wire dl2_enable;
-  wire dl2_rxactivehs;
-  wire dl2_rxsynchs;
-  wire dl2_rxvalidhs;
-  wire [7:0]dl3_datahs;
-  wire dl3_enable;
-  wire dl3_rxactivehs;
-  wire dl3_rxsynchs;
-  wire dl3_rxvalidhs;
-  wire in_delay_clk;
-  wire rxbyteclkhs;
-  wire trig_ack;
-  wire trig_req;
-
-  (* C_ADD_IDELAYCTRL = "TRUE" *) 
-  (* C_CALIB_WAIT = "8191" *) 
-  (* C_D0_SWAP = "FALSE" *) 
-  (* C_D1_SWAP = "FALSE" *) 
-  (* C_D2_SWAP = "FALSE" *) 
-  (* C_D3_SWAP = "FALSE" *) 
-  (* C_DIFF_TERM = "FALSE" *) 
-  (* C_IODELAY_GROUP = "csi_dly_grp" *) 
-  (* C_NUM_LANES = "2" *) 
-  (* C_NUM_LP_LANES = "1" *) 
-  (* C_RATE_LIMIT = "50" *) 
-  (* C_USE_DELAY = "TRUE" *) 
-  system_csi2_d_phy_rx_0_1_csi2_d_phy_rx U0
-       (.cl_enable(cl_enable),
-        .cl_rxclkactivehs(cl_rxclkactivehs),
-        .cl_stopstate(cl_stopstate),
-        .clk_rxn(clk_rxn),
-        .clk_rxp(clk_rxp),
-        .data_lp_n(data_lp_n),
-        .data_lp_p(data_lp_p),
-        .data_rxn(data_rxn),
-        .data_rxp(data_rxp),
-        .dl0_datahs(dl0_datahs),
-        .dl0_enable(dl0_enable),
-        .dl0_rxactivehs(dl0_rxactivehs),
-        .dl0_rxsynchs(dl0_rxsynchs),
-        .dl0_rxvalidhs(dl0_rxvalidhs),
-        .dl1_datahs(dl1_datahs),
-        .dl1_enable(dl1_enable),
-        .dl1_rxactivehs(dl1_rxactivehs),
-        .dl1_rxsynchs(dl1_rxsynchs),
-        .dl1_rxvalidhs(dl1_rxvalidhs),
-        .dl2_datahs(dl2_datahs),
-        .dl2_enable(dl2_enable),
-        .dl2_rxactivehs(dl2_rxactivehs),
-        .dl2_rxsynchs(dl2_rxsynchs),
-        .dl2_rxvalidhs(dl2_rxvalidhs),
-        .dl3_datahs(dl3_datahs),
-        .dl3_enable(dl3_enable),
-        .dl3_rxactivehs(dl3_rxactivehs),
-        .dl3_rxsynchs(dl3_rxsynchs),
-        .dl3_rxvalidhs(dl3_rxvalidhs),
-        .in_delay_clk(in_delay_clk),
-        .rxbyteclkhs(rxbyteclkhs),
-        .trig_ack(trig_ack),
-        .trig_req(trig_req));
-endmodule
-
 (* C_ADD_IDELAYCTRL = "TRUE" *) (* C_CALIB_WAIT = "8191" *) (* C_D0_SWAP = "FALSE" *) 
 (* C_D1_SWAP = "FALSE" *) (* C_D2_SWAP = "FALSE" *) (* C_D3_SWAP = "FALSE" *) 
 (* C_DIFF_TERM = "FALSE" *) (* C_IODELAY_GROUP = "csi_dly_grp" *) (* C_NUM_LANES = "2" *) 
 (* C_NUM_LP_LANES = "1" *) (* C_RATE_LIMIT = "50" *) (* C_USE_DELAY = "TRUE" *) 
-(* ORIG_REF_NAME = "csi2_d_phy_rx" *) 
 module system_csi2_d_phy_rx_0_1_csi2_d_phy_rx
    (in_delay_clk,
     clk_rxp,
@@ -629,7 +476,6 @@ module system_csi2_d_phy_rx_0_1_csi2_d_phy_rx
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "line_if" *) 
 module system_csi2_d_phy_rx_0_1_line_if
    (D,
     data_rxp,
@@ -817,7 +663,6 @@ module system_csi2_d_phy_rx_0_1_line_if_0
         .O(data_s));
 endmodule
 
-(* ORIG_REF_NAME = "phy_clock_system" *) 
 module system_csi2_d_phy_rx_0_1_phy_clock_system
    (dclk,
     pclk,
@@ -2570,6 +2415,158 @@ module system_csi2_d_phy_rx_0_1_phy_clock_system
     wait_cnt0_carry_i_4
        (.I0(\dly_gen.wait_cnt_reg_n_0_[1] ),
         .O(wait_cnt0_carry_i_4_n_0));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "system_csi2_d_phy_rx_0_1,csi2_d_phy_rx,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "csi2_d_phy_rx,Vivado 2020.1" *) 
+(* NotValidForBitStream *)
+module system_csi2_d_phy_rx_0_1
+   (in_delay_clk,
+    clk_rxp,
+    clk_rxn,
+    data_rxp,
+    data_rxn,
+    data_lp_p,
+    data_lp_n,
+    trig_req,
+    trig_ack,
+    rxbyteclkhs,
+    cl_enable,
+    cl_stopstate,
+    cl_rxclkactivehs,
+    dl0_enable,
+    dl0_rxactivehs,
+    dl0_rxvalidhs,
+    dl0_rxsynchs,
+    dl0_datahs,
+    dl1_enable,
+    dl1_rxactivehs,
+    dl1_rxvalidhs,
+    dl1_rxsynchs,
+    dl1_datahs,
+    dl2_enable,
+    dl2_rxactivehs,
+    dl2_rxvalidhs,
+    dl2_rxsynchs,
+    dl2_datahs,
+    dl3_enable,
+    dl3_rxactivehs,
+    dl3_rxvalidhs,
+    dl3_rxsynchs,
+    dl3_datahs);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 in_delay_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME in_delay_clk, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *) input in_delay_clk;
+  input clk_rxp;
+  input clk_rxn;
+  input [1:0]data_rxp;
+  input [1:0]data_rxn;
+  input [0:0]data_lp_p;
+  input [0:0]data_lp_n;
+  (* x_interface_info = "xilinx.com:interface:trigger:1.0 data_err TRIG" *) input trig_req;
+  (* x_interface_info = "xilinx.com:interface:trigger:1.0 data_err ACK" *) output trig_ack;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 rxbyteclkhs CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME rxbyteclkhs, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_csi2_d_phy_rx_0_1_rxbyteclkhs" *) output rxbyteclkhs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_ENABLE" *) input cl_enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_STOPSTATE" *) output cl_stopstate;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI CL_RXCLKACTIVEHS" *) output cl_rxclkactivehs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_ENABLE" *) input dl0_enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXACTIVEHS" *) output dl0_rxactivehs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXVALIDHS" *) output dl0_rxvalidhs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXSYNCHS" *) output dl0_rxsynchs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL0_RXDATAHS" *) output [7:0]dl0_datahs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_ENABLE" *) input dl1_enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXACTIVEHS" *) output dl1_rxactivehs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXVALIDHS" *) output dl1_rxvalidhs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXSYNCHS" *) output dl1_rxsynchs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL1_RXDATAHS" *) output [7:0]dl1_datahs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_ENABLE" *) input dl2_enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXACTIVEHS" *) output dl2_rxactivehs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXVALIDHS" *) output dl2_rxvalidhs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXSYNCHS" *) output dl2_rxsynchs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL2_RXDATAHS" *) output [7:0]dl2_datahs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_ENABLE" *) input dl3_enable;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXACTIVEHS" *) output dl3_rxactivehs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXVALIDHS" *) output dl3_rxvalidhs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXSYNCHS" *) output dl3_rxsynchs;
+  (* x_interface_info = "xilinx.com:interface:rx_mipi_ppi_if:1.0 RX_MIPI_PPI DL3_RXDATAHS" *) output [7:0]dl3_datahs;
+
+  wire cl_enable;
+  wire cl_rxclkactivehs;
+  wire cl_stopstate;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_rxn;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_rxp;
+  wire [0:0]data_lp_n;
+  wire [0:0]data_lp_p;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire [1:0]data_rxn;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire [1:0]data_rxp;
+  wire [7:0]dl0_datahs;
+  wire dl0_enable;
+  wire dl0_rxactivehs;
+  wire dl0_rxsynchs;
+  wire dl0_rxvalidhs;
+  wire [7:0]dl1_datahs;
+  wire dl1_enable;
+  wire dl1_rxactivehs;
+  wire dl1_rxsynchs;
+  wire dl1_rxvalidhs;
+  wire [7:0]dl2_datahs;
+  wire dl2_enable;
+  wire dl2_rxactivehs;
+  wire dl2_rxsynchs;
+  wire dl2_rxvalidhs;
+  wire [7:0]dl3_datahs;
+  wire dl3_enable;
+  wire dl3_rxactivehs;
+  wire dl3_rxsynchs;
+  wire dl3_rxvalidhs;
+  wire in_delay_clk;
+  wire rxbyteclkhs;
+  wire trig_ack;
+  wire trig_req;
+
+  (* C_ADD_IDELAYCTRL = "TRUE" *) 
+  (* C_CALIB_WAIT = "8191" *) 
+  (* C_D0_SWAP = "FALSE" *) 
+  (* C_D1_SWAP = "FALSE" *) 
+  (* C_D2_SWAP = "FALSE" *) 
+  (* C_D3_SWAP = "FALSE" *) 
+  (* C_DIFF_TERM = "FALSE" *) 
+  (* C_IODELAY_GROUP = "csi_dly_grp" *) 
+  (* C_NUM_LANES = "2" *) 
+  (* C_NUM_LP_LANES = "1" *) 
+  (* C_RATE_LIMIT = "50" *) 
+  (* C_USE_DELAY = "TRUE" *) 
+  system_csi2_d_phy_rx_0_1_csi2_d_phy_rx U0
+       (.cl_enable(cl_enable),
+        .cl_rxclkactivehs(cl_rxclkactivehs),
+        .cl_stopstate(cl_stopstate),
+        .clk_rxn(clk_rxn),
+        .clk_rxp(clk_rxp),
+        .data_lp_n(data_lp_n),
+        .data_lp_p(data_lp_p),
+        .data_rxn(data_rxn),
+        .data_rxp(data_rxp),
+        .dl0_datahs(dl0_datahs),
+        .dl0_enable(dl0_enable),
+        .dl0_rxactivehs(dl0_rxactivehs),
+        .dl0_rxsynchs(dl0_rxsynchs),
+        .dl0_rxvalidhs(dl0_rxvalidhs),
+        .dl1_datahs(dl1_datahs),
+        .dl1_enable(dl1_enable),
+        .dl1_rxactivehs(dl1_rxactivehs),
+        .dl1_rxsynchs(dl1_rxsynchs),
+        .dl1_rxvalidhs(dl1_rxvalidhs),
+        .dl2_datahs(dl2_datahs),
+        .dl2_enable(dl2_enable),
+        .dl2_rxactivehs(dl2_rxactivehs),
+        .dl2_rxsynchs(dl2_rxsynchs),
+        .dl2_rxvalidhs(dl2_rxvalidhs),
+        .dl3_datahs(dl3_datahs),
+        .dl3_enable(dl3_enable),
+        .dl3_rxactivehs(dl3_rxactivehs),
+        .dl3_rxsynchs(dl3_rxsynchs),
+        .dl3_rxvalidhs(dl3_rxvalidhs),
+        .in_delay_clk(in_delay_clk),
+        .rxbyteclkhs(rxbyteclkhs),
+        .trig_ack(trig_ack),
+        .trig_req(trig_req));
 endmodule
 `ifndef GLBL
 `define GLBL

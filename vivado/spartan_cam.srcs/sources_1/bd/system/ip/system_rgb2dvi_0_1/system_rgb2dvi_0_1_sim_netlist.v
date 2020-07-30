@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Jul 15 12:42:02 2020
+// Date        : Wed Jul 15 12:41:58 2020
 // Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top system_rgb2dvi_0_1 -prefix
+//               system_rgb2dvi_0_1_ system_rgb2dvi_0_1_sim_netlist.v
 // Design      : system_rgb2dvi_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,64 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_rgb2dvi_0_1,rgb2dvi,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "rgb2dvi,Vivado 2020.1" *) 
-(* NotValidForBitStream *)
-module system_rgb2dvi_0_1
-   (TMDS_Clk_p,
-    TMDS_Clk_n,
-    TMDS_Data_p,
-    TMDS_Data_n,
-    aRst_n,
-    vid_pData,
-    vid_pVDE,
-    vid_pHSync,
-    vid_pVSync,
-    PixelClk,
-    SerialClk);
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE" *) output TMDS_Clk_p;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N" *) output TMDS_Clk_n;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) output [2:0]TMDS_Data_p;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) output [2:0]TMDS_Data_n;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW" *) input aRst_n;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) input [23:0]vid_pData;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) input vid_pVDE;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) input vid_pHSync;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB VSYNC" *) input vid_pVSync;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1" *) input PixelClk;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 SerialClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1" *) input SerialClk;
-
-  wire PixelClk;
-  wire SerialClk;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_n;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_p;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_n;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_p;
-  wire aRst_n;
-  wire [23:0]vid_pData;
-  wire vid_pHSync;
-  wire vid_pVDE;
-  wire vid_pVSync;
-
-  (* kClkPrimitive = "MMCM" *) 
-  (* kClkRange = "1" *) 
-  (* kGenerateSerialClk = "FALSE" *) 
-  (* kRstActiveHigh = "FALSE" *) 
-  system_rgb2dvi_0_1_rgb2dvi U0
-       (.PixelClk(PixelClk),
-        .SerialClk(SerialClk),
-        .TMDS_Clk_n(TMDS_Clk_n),
-        .TMDS_Clk_p(TMDS_Clk_p),
-        .TMDS_Data_n(TMDS_Data_n),
-        .TMDS_Data_p(TMDS_Data_p),
-        .aRst(1'b0),
-        .aRst_n(aRst_n),
-        .vid_pData(vid_pData),
-        .vid_pHSync(vid_pHSync),
-        .vid_pVDE(vid_pVDE),
-        .vid_pVSync(vid_pVSync));
-endmodule
-
-(* ORIG_REF_NAME = "OutputSERDES" *) 
 module system_rgb2dvi_0_1_OutputSERDES
    (TMDS_Clk_p,
     TMDS_Clk_n,
@@ -682,7 +624,6 @@ module system_rgb2dvi_0_1_OutputSERDES_4
         .TQ(NLW_SerializerSlave_TQ_UNCONNECTED));
 endmodule
 
-(* ORIG_REF_NAME = "ResetBridge" *) 
 module system_rgb2dvi_0_1_ResetBridge
    (out,
     aRst_n,
@@ -707,7 +648,6 @@ module system_rgb2dvi_0_1_ResetBridge
         .O(aRst_int));
 endmodule
 
-(* ORIG_REF_NAME = "SyncAsync" *) 
 module system_rgb2dvi_0_1_SyncAsync
    (out,
     PixelClk,
@@ -743,7 +683,6 @@ module system_rgb2dvi_0_1_SyncAsync
         .Q(oSyncStages[1]));
 endmodule
 
-(* ORIG_REF_NAME = "TMDS_Encoder" *) 
 module system_rgb2dvi_0_1_TMDS_Encoder
    (SR,
     Q,
@@ -3668,8 +3607,8 @@ module system_rgb2dvi_0_1_TMDS_Encoder_3
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "rgb2dvi" *) (* kClkPrimitive = "MMCM" *) (* kClkRange = "1" *) 
-(* kGenerateSerialClk = "FALSE" *) (* kRstActiveHigh = "FALSE" *) 
+(* kClkPrimitive = "MMCM" *) (* kClkRange = "1" *) (* kGenerateSerialClk = "FALSE" *) 
+(* kRstActiveHigh = "FALSE" *) 
 module system_rgb2dvi_0_1_rgb2dvi
    (TMDS_Clk_p,
     TMDS_Clk_n,
@@ -3762,6 +3701,63 @@ module system_rgb2dvi_0_1_rgb2dvi
        (.PixelClk(PixelClk),
         .aRst_n(aRst_n),
         .out(pRstLck));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "system_rgb2dvi_0_1,rgb2dvi,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "rgb2dvi,Vivado 2020.1" *) 
+(* NotValidForBitStream *)
+module system_rgb2dvi_0_1
+   (TMDS_Clk_p,
+    TMDS_Clk_n,
+    TMDS_Data_p,
+    TMDS_Data_n,
+    aRst_n,
+    vid_pData,
+    vid_pVDE,
+    vid_pHSync,
+    vid_pVSync,
+    PixelClk,
+    SerialClk);
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE" *) output TMDS_Clk_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N" *) output TMDS_Clk_n;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) output [2:0]TMDS_Data_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) output [2:0]TMDS_Data_n;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW" *) input aRst_n;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) input [23:0]vid_pData;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) input vid_pVDE;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) input vid_pHSync;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB VSYNC" *) input vid_pVSync;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1" *) input PixelClk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 SerialClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1" *) input SerialClk;
+
+  wire PixelClk;
+  wire SerialClk;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_n;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_p;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_n;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_p;
+  wire aRst_n;
+  wire [23:0]vid_pData;
+  wire vid_pHSync;
+  wire vid_pVDE;
+  wire vid_pVSync;
+
+  (* kClkPrimitive = "MMCM" *) 
+  (* kClkRange = "1" *) 
+  (* kGenerateSerialClk = "FALSE" *) 
+  (* kRstActiveHigh = "FALSE" *) 
+  system_rgb2dvi_0_1_rgb2dvi U0
+       (.PixelClk(PixelClk),
+        .SerialClk(SerialClk),
+        .TMDS_Clk_n(TMDS_Clk_n),
+        .TMDS_Clk_p(TMDS_Clk_p),
+        .TMDS_Data_n(TMDS_Data_n),
+        .TMDS_Data_p(TMDS_Data_p),
+        .aRst(1'b0),
+        .aRst_n(aRst_n),
+        .vid_pData(vid_pData),
+        .vid_pHSync(vid_pHSync),
+        .vid_pVDE(vid_pVDE),
+        .vid_pVSync(vid_pVSync));
 endmodule
 `ifndef GLBL
 `define GLBL

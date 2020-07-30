@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Jul 22 16:54:45 2020
+| Date         : Tue Jul 28 13:21:43 2020
 | Host         : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
 | Design       : system_wrapper
@@ -17,20 +17,21 @@ Table of Contents
 1. Clock Primitive Utilization
 2. Global Clock Resources
 3. Global Clock Source Details
-4. Clock Regions: Key Resource Utilization
-5. Clock Regions : Global Clock Summary
-6. Device Cell Placement Summary for Global Clock g0
-7. Device Cell Placement Summary for Global Clock g1
-8. Device Cell Placement Summary for Global Clock g2
-9. Device Cell Placement Summary for Global Clock g3
-10. Device Cell Placement Summary for Global Clock g4
-11. Device Cell Placement Summary for Global Clock g5
-12. Device Cell Placement Summary for Global Clock g6
-13. Device Cell Placement Summary for Global Clock g7
-14. Device Cell Placement Summary for Global Clock g8
-15. Device Cell Placement Summary for Global Clock g9
-16. Clock Region Cell Placement per Global Clock: Region X0Y0
-17. Clock Region Cell Placement per Global Clock: Region X1Y0
+4. Local Clock Details
+5. Clock Regions: Key Resource Utilization
+6. Clock Regions : Global Clock Summary
+7. Device Cell Placement Summary for Global Clock g0
+8. Device Cell Placement Summary for Global Clock g1
+9. Device Cell Placement Summary for Global Clock g2
+10. Device Cell Placement Summary for Global Clock g3
+11. Device Cell Placement Summary for Global Clock g4
+12. Device Cell Placement Summary for Global Clock g5
+13. Device Cell Placement Summary for Global Clock g6
+14. Device Cell Placement Summary for Global Clock g7
+15. Device Cell Placement Summary for Global Clock g8
+16. Device Cell Placement Summary for Global Clock g9
+17. Clock Region Cell Placement per Global Clock: Region X0Y0
+18. Clock Region Cell Placement per Global Clock: Region X1Y0
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -55,9 +56,9 @@ Table of Contents
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                    | Driver Pin                                                            | Net                                                     |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+----------------------------------------------------------+-----------------------------------------------------------------------+---------------------------------------------------------+
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 2 |        1718 |               0 |        5.000 | Multiple                                                 | system_i/clk_wiz_0/inst/clkout1_buf/O                                 | system_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |         326 |               0 |       10.000 | clk_out1_system_clk_wiz_1_0                              | system_i/clk_wiz_1/inst/clkout1_buf/O                                 | system_i/clk_wiz_1/inst/clk_out1                        |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |         334 |               0 |       10.000 | clk_out1_system_clk_wiz_1_0                              | system_i/clk_wiz_1/inst/clkout1_buf/O                                 | system_i/clk_wiz_1/inst/clk_out1                        |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 2 |         262 |               0 |       19.044 | pclk                                                     | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/usr_BUFG_inst/O         | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/CLK       |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 1 |         232 |               0 |       33.333 | system_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O     | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y4 | n/a          |                 2 |         232 |               0 |       33.333 | system_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O     | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
 | g4        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y5 | n/a          |                 1 |          38 |               1 |       33.333 | system_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | system_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG_inst/O          | system_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG   |
 | g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |           8 |               0 |        2.000 | clk_out2_system_clk_wiz_1_0                              | system_i/clk_wiz_1/inst/clkout2_buf/O                                 | system_i/clk_wiz_1/inst/clk_out2                        |
 | g6        | src4      | BUFR/O          | None       | BUFR_X0Y1     | X0Y0         |                 2 |           3 |               1 |       19.044 | pclk                                                     | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/BUFR_inst/O             | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/pclk      |
@@ -90,7 +91,20 @@ Table of Contents
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 
 
-4. Clock Regions: Key Resource Utilization
+4. Local Clock Details
+----------------------
+
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------+----------------------------------------------+
+| Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                         | Net                                          |
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------+----------------------------------------------||
+| 0        | FDRE/Q          | None       | SLICE_X38Y10/AFF | X1Y0         |           3 |               0 |              |       | system_i/button_debounce_0/inst/button_event_reg/Q | system_i/button_debounce_0/inst/button_event - Static -
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+----------------------------------------------------+----------------------------------------------||
+* Local Clocks in this context represents only clocks driven by non-global buffers
+** Clock Loads column represents the clock pin loads (pin count)
+*** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+5. Clock Regions: Key Resource Utilization
 ------------------------------------------
 
 +-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
@@ -98,24 +112,24 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    8 |    12 |    1 |     4 |    1 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    2 |    50 |    0 |    50 | 1331 |   900 |  298 |   200 |    0 |     0 |    0 |     0 |    0 |     0 |
-| X1Y0              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 1059 |  1100 |  532 |   400 |    2 |    20 |    2 |    10 |    0 |    20 |
+| X0Y0              |    9 |    12 |    1 |     4 |    1 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    2 |    50 |    0 |    50 | 1346 |   900 |  273 |   200 |    0 |     0 |    0 |     0 |    0 |     0 |
+| X1Y0              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 1052 |  1100 |  524 |   400 |    2 |    20 |    2 |    10 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
 
-5. Clock Regions : Global Clock Summary
+6. Clock Regions : Global Clock Summary
 ---------------------------------------
 
 All Modules
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y0 |  8 |  7 |
+| Y0 |  9 |  7 |
 +----+----+----+
 
 
-6. Device Cell Placement Summary for Global Clock g0
+7. Device Cell Placement Summary for Global Clock g0
 ----------------------------------------------------
 
 +-----------+-----------------+-------------------+----------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------+
@@ -132,17 +146,17 @@ All Modules
 +----+-------+------+
 |    | X0    | X1   |
 +----+-------+------+
-| Y0 |  1111 |  589 |
+| Y0 |  1138 |  562 |
 +----+-------+------+
 
 
-7. Device Cell Placement Summary for Global Clock g1
+8. Device Cell Placement Summary for Global Clock g1
 ----------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                       | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                              |
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------+
-| g1        | BUFG/O          | n/a               | clk_out1_system_clk_wiz_1_0 |      10.000 | {0.000 5.000} |         315 |        8 |              0 |        0 | system_i/clk_wiz_1/inst/clk_out1 |
+| g1        | BUFG/O          | n/a               | clk_out1_system_clk_wiz_1_0 |      10.000 | {0.000 5.000} |         323 |        8 |              0 |        0 | system_i/clk_wiz_1/inst/clk_out1 |
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -150,14 +164,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+------+
-|    | X0  | X1   |
-+----+-----+------+
-| Y0 |  25 |  298 |
-+----+-----+------+
++----+----+------+
+|    | X0 | X1   |
++----+----+------+
+| Y0 |  3 |  328 |
++----+----+------+
 
 
-8. Device Cell Placement Summary for Global Clock g2
+9. Device Cell Placement Summary for Global Clock g2
 ----------------------------------------------------
 
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------+
@@ -174,12 +188,12 @@ All Modules
 +----+------+-----+
 |    | X0   | X1  |
 +----+------+-----+
-| Y0 |  248 |  14 |
+| Y0 |  237 |  25 |
 +----+------+-----+
 
 
-9. Device Cell Placement Summary for Global Clock g3
-----------------------------------------------------
+10. Device Cell Placement Summary for Global Clock g3
+-----------------------------------------------------
 
 +-----------+-----------------+-------------------+--------------------------------------------------------+-------------+----------------+-------------+----------+----------------+----------+---------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                  | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                     |
@@ -195,11 +209,11 @@ All Modules
 +----+----+------+
 |    | X0 | X1   |
 +----+----+------+
-| Y0 |  0 |  232 |
+| Y0 |  7 |  225 |
 +----+----+------+
 
 
-10. Device Cell Placement Summary for Global Clock g4
+11. Device Cell Placement Summary for Global Clock g4
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+----------------------------------------------------------+-------------+----------------+-------------+----------+----------------+----------+-------------------------------------------------------+
@@ -220,7 +234,7 @@ All Modules
 +----+----+-----+
 
 
-11. Device Cell Placement Summary for Global Clock g5
+12. Device Cell Placement Summary for Global Clock g5
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------+
@@ -241,7 +255,7 @@ All Modules
 +----+----+----+
 
 
-12. Device Cell Placement Summary for Global Clock g6
+13. Device Cell Placement Summary for Global Clock g6
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------------------------+
@@ -262,7 +276,7 @@ All Modules
 +----+--------+----+
 
 
-13. Device Cell Placement Summary for Global Clock g7
+14. Device Cell Placement Summary for Global Clock g7
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+----------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------------+
@@ -283,7 +297,7 @@ All Modules
 +----+----+----+
 
 
-14. Device Cell Placement Summary for Global Clock g8
+15. Device Cell Placement Summary for Global Clock g8
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------------------+
@@ -304,7 +318,7 @@ All Modules
 +----+----+----+
 
 
-15. Device Cell Placement Summary for Global Clock g9
+16. Device Cell Placement Summary for Global Clock g9
 -----------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------------------------+
@@ -325,15 +339,16 @@ All Modules
 +----+----+----+
 
 
-16. Clock Region Cell Placement per Global Clock: Region X0Y0
+17. Clock Region Cell Placement per Global Clock: Region X0Y0
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1111 |               0 | 1058 |     51 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | n/a   | BUFG/O          | None       |          25 |               0 |   25 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_1/inst/clk_out1                        |
-| g2        | n/a   | BUFG/O          | None       |         248 |               0 |  247 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/CLK       |
+| g0        | n/a   | BUFG/O          | None       |        1138 |               0 | 1099 |     37 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
+| g1        | n/a   | BUFG/O          | None       |           3 |               0 |    3 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_1/inst/clk_out1                        |
+| g2        | n/a   | BUFG/O          | None       |         237 |               0 |  236 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/CLK       |
+| g3        | n/a   | BUFG/O          | None       |           7 |               0 |    7 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
 | g6        | n/a   | BUFR/O          | None       |           3 |               0 |    1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/pclk      |
 | g8        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/clk_wiz_1/inst/clkfbout_buf_system_clk_wiz_1_0 |
 | g9        | n/a   | BUFGCTRL/O      | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/clk_dg    |
@@ -343,16 +358,16 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-17. Clock Region Cell Placement per Global Clock: Region X1Y0
+18. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         589 |               0 | 524 |     63 |    2 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
-| g1        | n/a   | BUFG/O          | None       |         298 |               0 | 274 |     12 |    2 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_1/inst/clk_out1                        |
-| g2        | n/a   | BUFG/O          | None       |          14 |               0 |  13 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/CLK       |
-| g3        | n/a   | BUFG/O          | None       |         232 |               0 | 210 |     22 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
+| g0        | n/a   | BUFG/O          | None       |         562 |               0 | 483 |     77 |    2 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
+| g1        | n/a   | BUFG/O          | None       |         328 |               0 | 304 |     12 |    2 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_1/inst/clk_out1                        |
+| g2        | n/a   | BUFG/O          | None       |          25 |               0 |  24 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/csi2_d_phy_rx_0/U0/clock_system_inst/CLK       |
+| g3        | n/a   | BUFG/O          | None       |         225 |               0 | 203 |     22 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0 |
 | g4        | n/a   | BUFG/O          | None       |          38 |               1 |  38 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG   |
 | g5        | n/a   | BUFG/O          | None       |           8 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_1/inst/clk_out2                        |
 | g7        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/clk_wiz_0/inst/clkfbout_buf_system_clk_wiz_0_1 |
@@ -399,7 +414,7 @@ resize_pblock [get_pblocks {CLKAG_system_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDA
 #startgroup
 create_pblock {CLKAG_system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0}
 add_cells_to_pblock [get_pblocks  {CLKAG_system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0"}]]]
-resize_pblock [get_pblocks {CLKAG_system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_system_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "system_i/csi2_d_phy_rx_0/U0/clock_system_inst/pclk" driven by instance "system_i/csi2_d_phy_rx_0/U0/clock_system_inst/BUFR_inst" located at site "BUFR_X0Y1"

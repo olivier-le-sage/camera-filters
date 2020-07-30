@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed Jul 15 12:42:02 2020
+-- Date        : Wed Jul 15 12:41:58 2020
 -- Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/system_rgb2dvi_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_rgb2dvi_0_1 -prefix
+--               system_rgb2dvi_0_1_ system_rgb2dvi_0_1_stub.vhdl
 -- Design      : system_rgb2dvi_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s15ftgb196-1

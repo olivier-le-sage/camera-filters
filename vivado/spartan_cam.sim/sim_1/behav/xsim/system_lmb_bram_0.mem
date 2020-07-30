@@ -3,12 +3,12 @@
 // SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 // Vivado v2020.1 (64-bit)
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-// Created on Wednesday July 22, 2020 - 07:37:11 pm, from:
+// Created on Sunday July 26, 2020 - 02:05:02 am, from:
 //
 //     Map file     - C:\Users\lesag\Documents\University\Personal_Projects\camera-filters\vivado\spartan_cam.srcs\sources_1\bd\system\system.bmm
 //     Data file(s) - c:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.srcs/sources_1/bd/system/ip/system_microblaze_0_0/data/mb_bootloop_le.elf
 //
-// Address space 'system_microblaze_0.system_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+// Address space 'system_microblaze_0.system_microblaze_0_local_memory_lmb_bram_8K_6_ADDR_SPACE', bit lane [31:0].
 //
 // Bus width = 32 bits, number of bus blocks = 1.
 

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="system_xbar_0_synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595007433">
+<GenRun Id="system_xbar_0_synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1595956305">
   <File Type="PA-TCL" Name="system_xbar_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_xbar_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_xbar_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="system_xbar_0.vds"/>
+  <File Type="RDS-UTIL" Name="system_xbar_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="system_xbar_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="system_xbar_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_xbar_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_xbar_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_xbar_0">
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.xci">
       <FileInfo>

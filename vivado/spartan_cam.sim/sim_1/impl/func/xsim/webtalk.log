@@ -2,12 +2,12 @@
 # Webtalk v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Jul 22 13:38:44 2020
-# Process ID: 12680
-# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.sim/sim_1/impl/func/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.sim/sim_1/impl/func/xsim/xsim.dir/gamma_correction_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.sim/sim_1/impl/func/xsim/webtalk.log
-# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.sim/sim_1/impl/func/xsim\webtalk.jou
+# Start of session at: Sun Jul 26 11:05:00 2020
+# Process ID: 7676
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/impl/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/impl/func/xsim/xsim.dir/gamma_correction_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/impl/func/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.sim/sim_1/impl/func/xsim/xsim.dir/gamma_correction_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Jul 22 13:38:44 2020...
+source C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.sim/sim_1/impl/func/xsim/xsim.dir/gamma_correction_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 26 11:05:00 2020...

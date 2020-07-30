@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Jul 22 16:54:31 2020
+| Date         : Tue Jul 28 13:21:26 2020
 | Host         : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
 | Command      : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
 | Design       : system_wrapper
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 26
+             Violations found: 1
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 25         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -45,131 +44,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PDRC-153#1 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[0]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[0]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[0]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[10]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[10]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[10]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[10] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[11]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[11]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[11]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[11] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[12]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[12]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[12]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[12] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[13]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[13]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[13]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[13] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#6 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[14]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[14]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[14]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[14] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[15]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[15]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[15]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[15] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#8 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[16]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[16]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[16]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[16] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#9 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[17]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[17]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[17]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[17] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#10 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[18]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[18]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[18]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[18] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#11 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[19]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[19]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[19]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[19] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#12 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[1]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[1]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[1]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#13 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[20]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[20]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[20]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[20] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#14 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[21]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[21]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[21]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[21] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#15 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[22]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[22]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[22]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[22] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#16 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[23]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[23]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[23]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[23] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#17 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[2]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[2]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[2]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[2] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#18 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[3]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[3]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[3]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[3] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#19 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[4]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[4]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[4]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[4] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#20 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[5]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[5]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[5]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[5] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#21 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[6]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[6]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[6]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[6] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#22 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[7]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[7]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[7]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[7] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#23 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[8]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[8]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[8]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[8] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#24 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/rgb_data_out_reg[9]/G0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/rgb_data_out_reg[9]/L3_2/O, cell system_i/gamma_correction_0/inst/rgb_data_out_reg[9]/L3_2 (in system_i/gamma_correction_0/inst/rgb_data_out_reg[9] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#25 Warning
-Gated clock check  
-Net system_i/gamma_correction_0/inst/state_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin system_i/gamma_correction_0/inst/state_reg[2]_i_2/O, cell system_i/gamma_correction_0/inst/state_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

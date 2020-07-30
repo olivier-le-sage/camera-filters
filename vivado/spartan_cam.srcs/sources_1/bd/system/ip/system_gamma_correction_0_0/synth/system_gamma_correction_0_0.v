@@ -57,19 +57,24 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_gamma_correction_0_0 (
   rgb_data_in,
-  key,
+  change_filt,
+  reset,
   rgb_data_out,
   state
 );
 
 input wire [23 : 0] rgb_data_in;
-input wire [1 : 0] key;
+input wire change_filt;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
+input wire reset;
 output wire [23 : 0] rgb_data_out;
 output wire [2 : 0] state;
 
   gamma_correction inst (
     .rgb_data_in(rgb_data_in),
-    .key(key),
+    .change_filt(change_filt),
+    .reset(reset),
     .rgb_data_out(rgb_data_out),
     .state(state)
   );

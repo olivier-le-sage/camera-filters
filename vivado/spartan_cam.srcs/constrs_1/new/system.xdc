@@ -56,10 +56,8 @@ set_property -dict {PACKAGE_PIN C1 IOSTANDARD TMDS_33} [get_ports {TMDS_0_data_n
 set_property -dict {PACKAGE_PIN D1 IOSTANDARD TMDS_33} [get_ports {TMDS_0_data_p[2]}]
 #set_property -dict { PACKAGE_PIN R19   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_hpdn }]; #IO_0_34 Sch=hdmi_tx_hpdn
 
-set_property PACKAGE_PIN C3 [get_ports filter_en]
-set_property IOSTANDARD LVCMOS33 [get_ports filter_en]
 
-set_property IOSTANDARD LVCMOS33 [get_ports {buttons[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {buttons[0]}]
-set_property PACKAGE_PIN C3 [get_ports {buttons[0]}]
-set_property PACKAGE_PIN M4 [get_ports {buttons[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {filter_reset}]
+set_property IOSTANDARD LVCMOS33 [get_ports {change_filter}]
+set_property PACKAGE_PIN C3 [get_ports {change_filter}]
+set_property PACKAGE_PIN M4 [get_ports {filter_reset}]

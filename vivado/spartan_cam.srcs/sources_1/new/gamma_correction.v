@@ -23,7 +23,8 @@
 
 module gamma_correction(
     input [23:0] rgb_data_in,
-    input [1:0] key,
+    input change_filt,
+    input reset,
     output reg [23:0] rgb_data_out,
     output reg [2:0] state
     );
@@ -48,11 +49,10 @@ module gamma_correction(
         reg signed [15:0] y;
         reg signed [15:0] u;
         reg signed [15:0] v;
-        reg y_ovf, u_ovf, v_ovf;
         begin
             r_in = {8'b0,rgb_colors[23:16]};
-            g_in = {8'b0,rgb_colors[15:8]};
-            b_in = {8'b0,rgb_colors[7:0]};
+            b_in = {8'b0,rgb_colors[15:8]};
+            g_in = {8'b0,rgb_colors[7:0]};
             // standard equations:
             // Y' = 0.299R + 0.587G + 0.114B
             // U  = -0.14713R - 0.28886G + 0.436B 
@@ -106,7 +106,7 @@ module gamma_correction(
             if (r < 0) r = 0;
             if (g < 0) g = 0;
             if (b < 0) b = 0;
-            yuv2rgb = {r[7:0],g[7:0],b[7:0]};
+            yuv2rgb = {r[7:0],b[7:0],g[7:0]};
         end
     endfunction
     
@@ -169,12 +169,17 @@ module gamma_correction(
         correct_gamma14 = (color >> 1) + 124;
     endfunction
     
-    // key[0] cycles through correction modes, key[1] resets to passthrough mode
-    // requires inputs to already be debounced
-    // state = 2'b0;
-    always @(key) begin
-        if (key == 2'b01) state <= 3'b0;
-        else if (key == 2'b10) state <= state + 1;
+    // key[0] cycles through correction modes
+    // inputs are assumed to already be debounced
+    
+    //always @(negedge clk) begin
+    //    if (reset) state <= 3'b0;
+    //    else if (change_filt) state <= state + 1;
+    //end
+    always @(reset, change_filt) begin
+        if (reset) state <= 3'b0;
+        else begin if (change_filt) state <= state + 1;
+        end
     end
     
     always @(state, rgb_data_in, rgb_data_out) begin        
@@ -184,13 +189,16 @@ module gamma_correction(
             rgb_data_out <= {correct_gamma22(r),correct_gamma22(g),correct_gamma22(b)};
         else if (state == 3)
             rgb_data_out <= {increase_brightness(r),increase_brightness(g),increase_brightness(b)};
-        else if (state == 4) begin
+        else if ((state == 4) || (state == 5)) begin
             {y_tmp,u_tmp,v_tmp} = rgb2yuv(rgb_data_in);
-            y_tmp = increase_brightness(y_tmp);
+            if (state == 4) begin y_tmp = increase_brightness(y_tmp);
+            end
+            else if (state == 5) begin y_tmp = correct_gamma14(y_tmp);
+            end
             rgb_data_out = yuv2rgb({y_tmp,u_tmp,v_tmp});
         end
-        else if (state == 5)
-            rgb_data_out = yuv2rgb(rgb2yuv(rgb_data_in));
+        else if (state == 6)
+            rgb_data_out <= yuv2rgb(rgb2yuv(rgb_data_in));
         else
             rgb_data_out <= rgb_data_in;
     end

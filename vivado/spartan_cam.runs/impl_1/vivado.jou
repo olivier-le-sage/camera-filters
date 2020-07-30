@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Jul 22 16:49:16 2020
-# Process ID: 19884
-# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/impl_1
+# Start of session at: Tue Jul 28 13:22:15 2020
+# Process ID: 37328
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/impl_1
 # Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
-# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/impl_1/system_wrapper.vdi
-# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/impl_1\vivado.jou
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace

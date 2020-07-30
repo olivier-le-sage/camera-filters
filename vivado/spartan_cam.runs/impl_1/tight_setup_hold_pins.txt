@@ -1,145 +1,139 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[42].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_dbg_pc_hit_i_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[0].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_dbg_pc_hit_single_step_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[8].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[19].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[18].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_dbg_pc_hit_i_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[37].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[12].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[28].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[23].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[9].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[22].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[12].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[23].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[31].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[6].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[32].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[17].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[15].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_valid_jump_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[41].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[21].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[29].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[34].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[21].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[16].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[16].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[13].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                   system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[13].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[19].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[10].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[30].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[1].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[8].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[33].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[2].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[27].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[38].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[31].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[28].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[39].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[25].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[11].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[35].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[7].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[24].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[26].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |               system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_mbar_is_sleep_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[1].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[18].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[0]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[24].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[22].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[3].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |             system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/of_read_imm_reg_ii_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_LWX_SWX_instr.ex_reservation_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[5].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[25].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[3].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[6].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[15].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[2].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/single_step_count_reg[0]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[1].Gen_Sel_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[30].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |               system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_dbg_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[9].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[10].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[20].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[40].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.step_continue_hold_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[14].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |              system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_is_div_instr_I_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[6].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[17].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[26].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[2].Gen_Sel_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[3].Gen_Sel_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[5].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[7].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[0].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[3].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[10].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[15].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[5].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[1].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[22].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[30].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[35].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[16].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_LWX_SWX_instr.ex_reservation_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[23].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[9].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                   system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[29].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[29].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[11].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[27].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[17].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[28].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[27].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[31].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[12].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[42].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[23].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[36].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[22].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[7].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[0].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[19].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[26].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[13].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[30].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[25].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[2].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[14].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[20].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |         system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Write_DCache_decode_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ex_branch_with_delayslot_i_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/single_step_count_reg[1]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Last_Sel_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_valid_i_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[8].Gen_Instr_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[30].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[28].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |             system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Access_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                       system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_valid_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[41].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[32].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[25].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[4].Gen_Sel_DFF/Using_FPGA.Native/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/OF_Valid_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[0].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[24].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[5].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[21].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[7].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.step_continue_hold_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[10].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[38].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[19].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[20].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[24].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[29].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[31].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[11].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[3].Gen_Sel_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[34].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[15].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[12].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[8].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[2].Gen_Sel_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[3].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[27].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[2].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[14].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[16].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[26].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[21].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[18].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                 system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_mbar_decode_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[6].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[40].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Last_Sel_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                       system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_valid_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[39].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_valid_jump_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/OF_Valid_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/single_step_count_reg[1]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |               system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_mbar_is_sleep_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |              system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_is_div_instr_I_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |               system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_dbg_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_3.of_clear_MSR_BIP_hold_Inst/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[9].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Gen_Mux_Select_LUT6[1].Gen_Sel_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[13].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[18].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_valid_i_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |             system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/of_read_imm_reg_ii_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |         system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Write_DCache_decode_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/single_step_count_reg[0]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[28].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[1]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[1].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[0]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/ex_branch_with_delayslot_i_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_grant_hot_i_reg[0]_inv/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[7]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[29].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                   system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_jump_hold_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |             system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Access_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[28].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[11].Gen_Instr_DFF/Using_FPGA.Native/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/ex_jump_q_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                      system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_valid_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |              system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_gpr_write_dbg_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                 system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_first_cycle_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_jump_nodelay_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_gpr_write_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                   system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_jump_hold_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                                   system_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/Addr_Counters[3].FDRE_I/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.m_grant_hot_i_reg[0]_inv/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[2]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[0]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[5]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[8]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[30].Using_FDR.MSR_ex_I/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |              system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_gpr_write_dbg_reg/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[1]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[1]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[0]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[7]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                                   system_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/Addr_Counters[2].FDRE_I/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |           system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_fetch_in_progress_reg/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[27]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[2]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[3]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |        system_i/microblaze_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d_reg[2]/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[1]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[24]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[10]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[7]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[22]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[24]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[27]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[11]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PC_Module_I/Instruction_Prefetch_Mux[20].Gen_Instr_DFF/Using_FPGA.Native/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                      system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_valid_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[3]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_gpr_write_reg/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[6]/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[4]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[23]/D|
 | clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[2]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[6]/D|
-| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                                   system_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/Addr_Counters[1].FDRE_I/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[2]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[26]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[12]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[3]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |     system_i/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[0]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |                                   system_i/axi_iic_0/U0/X_IIC/WRITE_FIFO_CTRL_I/Addr_Counters[3].FDRE_I/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |  system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op1_reg[9]/D|
+| clk_out1_system_clk_wiz_0_1_1 |clk_out1_system_clk_wiz_0_1 |system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/data_rd_reg_reg[24]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# bayer2rgb, csi2dvp, gamma_correction
+# bayer2rgb, button_debounce, button_debounce, csi2dvp, gamma_correction
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -262,8 +262,8 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set buttons [ create_bd_port -dir I -from 1 -to 0 buttons ]
   set cam_gpio [ create_bd_port -dir O -from 0 -to 0 cam_gpio ]
+  set change_filter [ create_bd_port -dir I change_filter ]
   set clk_in1_0 [ create_bd_port -dir I -type clk clk_in1_0 ]
   set clk_rxn_0 [ create_bd_port -dir I clk_rxn_0 ]
   set clk_rxp_0 [ create_bd_port -dir I clk_rxp_0 ]
@@ -271,6 +271,7 @@ proc create_root_design { parentCell } {
   set data_lp_p_0 [ create_bd_port -dir I -from 0 -to 0 data_lp_p_0 ]
   set data_rxn_0 [ create_bd_port -dir I -from 1 -to 0 data_rxn_0 ]
   set data_rxp_0 [ create_bd_port -dir I -from 1 -to 0 data_rxp_0 ]
+  set filter_reset [ create_bd_port -dir I filter_reset ]
 
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
@@ -296,6 +297,28 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    } elseif { $bayer2rgb_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: button_debounce_0, and set properties
+  set block_name button_debounce
+  set block_cell_name button_debounce_0
+  if { [catch {set button_debounce_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $button_debounce_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: button_debounce_1, and set properties
+  set block_name button_debounce
+  set block_cell_name button_debounce_1
+  if { [catch {set button_debounce_1 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $button_debounce_1 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -418,12 +441,14 @@ proc create_root_design { parentCell } {
   connect_bd_net -net bayer2rgb_0_de_out [get_bd_pins bayer2rgb_0/de_out] [get_bd_pins rgb2dvi_0/vid_pVDE]
   connect_bd_net -net bayer2rgb_0_hsync_out [get_bd_pins bayer2rgb_0/hsync_out] [get_bd_pins rgb2dvi_0/vid_pHSync]
   connect_bd_net -net bayer2rgb_0_vsync_out [get_bd_pins bayer2rgb_0/vsync_out] [get_bd_pins rgb2dvi_0/vid_pVSync]
-  connect_bd_net -net buttons_1 [get_bd_ports buttons] [get_bd_pins gamma_correction_0/key]
+  connect_bd_net -net button_debounce_0_button_event [get_bd_pins button_debounce_0/button_event] [get_bd_pins gamma_correction_0/change_filt]
+  connect_bd_net -net button_debounce_1_button_event [get_bd_pins button_debounce_1/button_event] [get_bd_pins gamma_correction_0/reset]
+  connect_bd_net -net change_filter_1 [get_bd_ports change_filter] [get_bd_pins button_debounce_0/button]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports clk_in1_0] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net clk_rxn_0_1 [get_bd_ports clk_rxn_0] [get_bd_pins csi2_d_phy_rx_0/clk_rxn]
   connect_bd_net -net clk_rxp_0_1 [get_bd_ports clk_rxp_0] [get_bd_pins csi2_d_phy_rx_0/clk_rxp]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_wiz_0_200M/ext_reset_in]
-  connect_bd_net -net clk_wiz_1_clk_out1 [get_bd_pins bayer2rgb_0/clk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins csi2dvp_0/vid_clk] [get_bd_pins rgb2dvi_0/PixelClk]
+  connect_bd_net -net clk_wiz_1_clk_out1 [get_bd_pins bayer2rgb_0/clk] [get_bd_pins button_debounce_0/clk] [get_bd_pins button_debounce_1/clk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins csi2dvp_0/vid_clk] [get_bd_pins rgb2dvi_0/PixelClk]
   connect_bd_net -net clk_wiz_1_clk_out2 [get_bd_pins clk_wiz_1/clk_out2] [get_bd_pins rgb2dvi_0/SerialClk]
   connect_bd_net -net csi2_d_phy_rx_0_rxbyteclkhs [get_bd_pins clk_wiz_1/clk_in1] [get_bd_pins csi2_d_phy_rx_0/rxbyteclkhs] [get_bd_pins csi2dvp_0/s_axis_aclk] [get_bd_pins csi_to_axis_0/m_axis_aclk] [get_bd_pins csi_to_axis_0/rxbyteclkhs]
   connect_bd_net -net csi2dvp_0_hdata [get_bd_pins bayer2rgb_0/hdata] [get_bd_pins csi2dvp_0/hdata]
@@ -436,6 +461,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net data_lp_p_0_1 [get_bd_ports data_lp_p_0] [get_bd_pins csi2_d_phy_rx_0/data_lp_p]
   connect_bd_net -net data_rxn_0_1 [get_bd_ports data_rxn_0] [get_bd_pins csi2_d_phy_rx_0/data_rxn]
   connect_bd_net -net data_rxp_0_1 [get_bd_ports data_rxp_0] [get_bd_pins csi2_d_phy_rx_0/data_rxp]
+  connect_bd_net -net filter_reset_1 [get_bd_ports filter_reset] [get_bd_pins button_debounce_1/button]
   connect_bd_net -net gamma_correction_0_rgb_data_out [get_bd_pins gamma_correction_0/rgb_data_out] [get_bd_pins rgb2dvi_0/vid_pData]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_0_200M/mb_debug_sys_rst]
   connect_bd_net -net microblaze_0_Clk [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_iic_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins csi2_d_phy_rx_0/in_delay_clk] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_0_200M/slowest_sync_clk]

@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Jul 15 12:42:45 2020
-# Process ID: 12656
-# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1
+# Start of session at: Sun Jul 26 00:30:59 2020
+# Process ID: 21700
+# Current directory: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/system_lmb_bram_0_synth_1
 # Command line: vivado.exe -log system_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_lmb_bram_0.tcl
-# Log file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1/system_lmb_bram_0.vds
-# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_lmb_bram_0_synth_1\vivado.jou
+# Log file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/system_lmb_bram_0_synth_1/system_lmb_bram_0.vds
+# Journal file: C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/system_lmb_bram_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_lmb_bram_0.tcl -notrace

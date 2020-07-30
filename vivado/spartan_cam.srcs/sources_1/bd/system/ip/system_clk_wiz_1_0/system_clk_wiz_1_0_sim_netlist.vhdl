@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed Jul 15 12:49:35 2020
+-- Date        : Wed Jul 15 12:49:28 2020
 -- Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_clk_wiz_1_0 -prefix
+--               system_clk_wiz_1_0_ system_clk_wiz_1_0_sim_netlist.vhdl
 -- Design      : system_clk_wiz_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity system_clk_wiz_1_0_system_clk_wiz_1_0_clk_wiz is
     clk_out2 : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_clk_wiz_1_0_system_clk_wiz_1_0_clk_wiz : entity is "system_clk_wiz_1_0_clk_wiz";
 end system_clk_wiz_1_0_system_clk_wiz_1_0_clk_wiz;
 
 architecture STRUCTURE of system_clk_wiz_1_0_system_clk_wiz_1_0_clk_wiz is

@@ -1,89 +1,96 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.864335",
-   "Default View_TopLeft":"1130,0",
+   "Default View_ScaleFactor":"1.03466",
+   "Default View_TopLeft":"1013,797",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port cam_iic -pg 1 -lvl 8 -x 2370 -y 310 -defaultsOSRD
-preplace port UART_0 -pg 1 -lvl 8 -x 2370 -y 460 -defaultsOSRD
-preplace port led -pg 1 -lvl 8 -x 2370 -y 610 -defaultsOSRD
-preplace port TMDS_0 -pg 1 -lvl 8 -x 2370 -y 130 -defaultsOSRD
-preplace port clk_in1_0 -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
-preplace port clk_rxp_0 -pg 1 -lvl 0 -x -10 -y 380 -defaultsOSRD
-preplace port clk_rxn_0 -pg 1 -lvl 0 -x -10 -y 410 -defaultsOSRD
-preplace portBus data_rxp_0 -pg 1 -lvl 0 -x -10 -y 440 -defaultsOSRD
-preplace portBus data_rxn_0 -pg 1 -lvl 0 -x -10 -y 470 -defaultsOSRD
-preplace portBus data_lp_p_0 -pg 1 -lvl 0 -x -10 -y 500 -defaultsOSRD
-preplace portBus data_lp_n_0 -pg 1 -lvl 0 -x -10 -y 530 -defaultsOSRD
-preplace portBus cam_gpio -pg 1 -lvl 8 -x 2370 -y 690 -defaultsOSRD
-preplace portBus buttons -pg 1 -lvl 0 -x -10 -y 270 -defaultsOSRD
-preplace inst csi2_d_phy_rx_0 -pg 1 -lvl 2 -x 370 -y 440 -defaultsOSRD
-preplace inst csi_to_axis_0 -pg 1 -lvl 3 -x 640 -y 410 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -x 1850 -y 700 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 7 -x 2220 -y 130 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 2220 -y 610 -defaultsOSRD
-preplace inst axi_iic_0 -pg 1 -lvl 7 -x 2220 -y 330 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 7 -x 2220 -y 470 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 340 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 3 -x 640 -y 210 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 4 -x 970 -y 640 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -x 1850 -y 450 -defaultsOSRD
-preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 4 -x 970 -y 820 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 6 -x 1850 -y 840 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 5 -x 1410 -y 640 -defaultsOSRD
-preplace inst csi2dvp_0 -pg 1 -lvl 4 -x 970 -y 160 -defaultsOSRD
-preplace inst bayer2rgb_0 -pg 1 -lvl 5 -x 1410 -y 130 -defaultsOSRD
-preplace inst gamma_correction_0 -pg 1 -lvl 6 -x 1850 -y 220 -defaultsOSRD
-preplace netloc clk_in1_0_1 1 0 1 NJ 340
-preplace netloc microblaze_0_Clk 1 1 6 220 310 NJ 310 770 560 1180 550 1660 290 2020
-preplace netloc clk_rxp_0_1 1 0 2 20J 410 NJ
-preplace netloc clk_rxn_0_1 1 0 2 10J 430 NJ
-preplace netloc data_rxp_0_1 1 0 2 NJ 440 220J
-preplace netloc data_rxn_0_1 1 0 2 NJ 470 NJ
-preplace netloc data_lp_p_0_1 1 0 2 NJ 500 220J
-preplace netloc data_lp_n_0_1 1 0 2 20J 510 NJ
-preplace netloc csi2_d_phy_rx_0_rxbyteclkhs 1 2 2 510 130 800
-preplace netloc xlconstant_0_dout 1 2 6 520 290 NJ 290 NJ 290 1650J 110 2040 690 NJ
-preplace netloc rst_clk_wiz_0_200M_mb_reset 1 4 1 1160 670n
-preplace netloc rst_clk_wiz_0_200M_bus_struct_reset 1 4 2 1180 730 NJ
-preplace netloc mdm_1_debug_sys_rst 1 3 2 800 570 1140
-preplace netloc clk_wiz_0_locked 1 1 3 210J 300 NJ 300 780
-preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 4 3 1170J 540 1680 150 2030
-preplace netloc rst_clk_wiz_0_200M_interconnect_aresetn 1 4 2 1150J 530 1640
-preplace netloc clk_wiz_1_clk_out1 1 3 4 770 50 1150 10 NJ 10 2080
-preplace netloc csi2dvp_0_hdata 1 4 1 1170 170n
-preplace netloc csi2dvp_0_vdata 1 4 1 1180 190n
-preplace netloc csi2dvp_0_vid_active_video 1 4 1 N 150
-preplace netloc csi2dvp_0_vid_vsync 1 4 1 N 130
-preplace netloc csi2dvp_0_vid_data 1 4 1 1150 90n
-preplace netloc csi2dvp_0_vid_hsync 1 4 1 N 110
-preplace netloc bayer2rgb_0_hsync_out 1 5 2 N 100 NJ
-preplace netloc bayer2rgb_0_vsync_out 1 5 2 N 120 NJ
-preplace netloc bayer2rgb_0_de_out 1 5 2 1640 130 2070J
-preplace netloc clk_wiz_1_clk_out2 1 3 4 770J 270 NJ 270 1660J 140 2060
-preplace netloc bayer2rgb_0_data_out 1 5 1 1670 160n
-preplace netloc gamma_correction_0_rgb_data_out 1 6 1 2050 80n
-preplace netloc buttons_1 1 0 6 NJ 270 NJ 270 500J 280 NJ 280 NJ 280 1670J
-preplace netloc rgb2dvi_0_TMDS 1 7 1 NJ 130
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 1 2010 470n
-preplace netloc csi2_d_phy_rx_0_RX_MIPI_PPI 1 2 1 500 370n
-preplace netloc microblaze_0_M_AXI_DP 1 5 1 1670 350n
-preplace netloc axi_uartlite_0_UART 1 7 1 NJ 460
-preplace netloc microblaze_0_ilmb_1 1 5 1 1640 640n
-preplace netloc microblaze_0_debug 1 4 1 N 630
-preplace netloc csi_to_axis_0_data_err 1 1 3 230 140 NJ 140 760
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 6 1 2070 310n
-preplace netloc csi_to_axis_0_M_AXIS 1 3 1 790 140n
-preplace netloc microblaze_0_dlmb_1 1 5 1 1650 620n
-preplace netloc axi_gpio_0_GPIO 1 7 1 NJ 610
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 6 1 N 450
-preplace netloc axi_iic_0_IIC 1 7 1 NJ 310
-levelinfo -pg 1 -10 120 370 640 970 1410 1850 2220 2370
-pagesize -pg 1 -db -bbox -sgen -160 0 2510 930
+preplace port cam_iic -pg 1 -lvl 8 -x 2350 -y 60 -defaultsOSRD
+preplace port UART_0 -pg 1 -lvl 8 -x 2350 -y 210 -defaultsOSRD
+preplace port led -pg 1 -lvl 8 -x 2350 -y 360 -defaultsOSRD
+preplace port TMDS_0 -pg 1 -lvl 8 -x 2350 -y 880 -defaultsOSRD
+preplace port clk_in1_0 -pg 1 -lvl 0 -x -10 -y 1240 -defaultsOSRD
+preplace port clk_rxp_0 -pg 1 -lvl 0 -x -10 -y 990 -defaultsOSRD
+preplace port clk_rxn_0 -pg 1 -lvl 0 -x -10 -y 1020 -defaultsOSRD
+preplace port filter_reset -pg 1 -lvl 0 -x -10 -y 1170 -defaultsOSRD
+preplace port change_filter -pg 1 -lvl 0 -x -10 -y 1310 -defaultsOSRD
+preplace portBus data_rxp_0 -pg 1 -lvl 0 -x -10 -y 1050 -defaultsOSRD
+preplace portBus data_rxn_0 -pg 1 -lvl 0 -x -10 -y 1080 -defaultsOSRD
+preplace portBus data_lp_p_0 -pg 1 -lvl 0 -x -10 -y 1110 -defaultsOSRD
+preplace portBus data_lp_n_0 -pg 1 -lvl 0 -x -10 -y 1140 -defaultsOSRD
+preplace portBus cam_gpio -pg 1 -lvl 8 -x 2350 -y 1010 -defaultsOSRD
+preplace inst csi2_d_phy_rx_0 -pg 1 -lvl 2 -x 380 -y 1050 -defaultsOSRD
+preplace inst csi_to_axis_0 -pg 1 -lvl 3 -x 650 -y 810 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -x 1850 -y 450 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 7 -x 2200 -y 880 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 2200 -y 360 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 7 -x 2200 -y 80 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 7 -x 2200 -y 220 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 1240 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 3 -x 650 -y 990 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 4 -x 970 -y 440 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -x 1850 -y 200 -defaultsOSRD
+preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 4 -x 970 -y 610 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -x 1850 -y 1260 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 5 -x 1420 -y 440 -defaultsOSRD
+preplace inst csi2dvp_0 -pg 1 -lvl 4 -x 970 -y 820 -defaultsOSRD
+preplace inst bayer2rgb_0 -pg 1 -lvl 5 -x 1420 -y 810 -defaultsOSRD
+preplace inst button_debounce_0 -pg 1 -lvl 5 -x 1420 -y 1320 -defaultsOSRD
+preplace inst button_debounce_1 -pg 1 -lvl 5 -x 1420 -y 1190 -defaultsOSRD
+preplace inst gamma_correction_0 -pg 1 -lvl 6 -x 1850 -y 1140 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 1 6 210 570 NJ 570 770 370 1190 350 1680 30 2040
+preplace netloc clk_rxp_0_1 1 0 2 NJ 990 240J
+preplace netloc clk_rxn_0_1 1 0 2 NJ 1020 220J
+preplace netloc data_rxp_0_1 1 0 2 NJ 1050 200J
+preplace netloc data_rxn_0_1 1 0 2 NJ 1080 NJ
+preplace netloc data_lp_p_0_1 1 0 2 10J 1100 NJ
+preplace netloc data_lp_n_0_1 1 0 2 10J 1120 NJ
+preplace netloc csi2_d_phy_rx_0_rxbyteclkhs 1 2 2 510 700 780
+preplace netloc xlconstant_0_dout 1 2 6 530 710 NJ 710 1160J 940 NJ 940 2060 1010 NJ
+preplace netloc rst_clk_wiz_0_200M_mb_reset 1 4 1 1190 470n
+preplace netloc rst_clk_wiz_0_200M_bus_struct_reset 1 4 2 NJ 590 1660
+preplace netloc mdm_1_debug_sys_rst 1 3 2 780 510 1150
+preplace netloc clk_wiz_0_locked 1 1 3 230J 690 NJ 690 770
+preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 4 3 1180J 340 1650 40 2020
+preplace netloc rst_clk_wiz_0_200M_interconnect_aresetn 1 4 2 1160J 330 1660
+preplace netloc clk_wiz_1_clk_out1 1 3 4 780 930 1180 930 NJ 930 NJ
+preplace netloc csi2dvp_0_hdata 1 4 1 N 850
+preplace netloc csi2dvp_0_vdata 1 4 1 N 870
+preplace netloc csi2dvp_0_vid_active_video 1 4 1 1140 810n
+preplace netloc csi2dvp_0_vid_vsync 1 4 1 1150 790n
+preplace netloc csi2dvp_0_vid_data 1 4 1 1190 770n
+preplace netloc csi2dvp_0_vid_hsync 1 4 1 1170 770n
+preplace netloc bayer2rgb_0_hsync_out 1 5 2 NJ 780 2030
+preplace netloc bayer2rgb_0_vsync_out 1 5 2 NJ 800 2020
+preplace netloc bayer2rgb_0_de_out 1 5 2 NJ 820 2010
+preplace netloc clk_wiz_1_clk_out2 1 3 4 NJ 1000 NJ 1000 NJ 1000 2050
+preplace netloc bayer2rgb_0_data_out 1 5 1 1670 840n
+preplace netloc gamma_correction_0_rgb_data_out 1 6 1 2040 830n
+preplace netloc change_filter_1 1 0 5 NJ 1310 NJ 1310 NJ 1310 NJ 1310 NJ
+preplace netloc filter_reset_1 1 0 5 NJ 1170 200J 1180 NJ 1180 NJ 1180 NJ
+preplace netloc button_debounce_0_button_event 1 5 1 1660 1140n
+preplace netloc button_debounce_1_button_event 1 5 1 1680 1160n
+preplace netloc clk_in1_0_1 1 0 1 N 1240
+preplace netloc axi_gpio_0_GPIO 1 7 1 NJ 360
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 6 1 N 200
+preplace netloc csi_to_axis_0_M_AXIS 1 3 1 N 800
+preplace netloc rgb2dvi_0_TMDS 1 7 1 NJ 880
+preplace netloc axi_uartlite_0_UART 1 7 1 NJ 210
+preplace netloc csi2_d_phy_rx_0_RX_MIPI_PPI 1 2 1 520 770n
+preplace netloc axi_iic_0_IIC 1 7 1 NJ 60
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 6 1 2010 60n
+preplace netloc microblaze_0_debug 1 4 1 N 430
+preplace netloc microblaze_0_dlmb_1 1 5 1 N 420
+preplace netloc microblaze_0_ilmb_1 1 5 1 N 440
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 1 2030 220n
+preplace netloc microblaze_0_M_AXI_DP 1 5 1 1670 100n
+preplace netloc csi_to_axis_0_data_err 1 1 3 240 910 NJ 910 770
+levelinfo -pg 1 -10 110 380 650 970 1420 1850 2200 2350
+pagesize -pg 1 -db -bbox -sgen -160 0 2490 1390
 "
 }
 {
    "da_axi4_cnt":"4",
+   "da_clkrst_cnt":"2",
    "da_mb_cnt":"2"
 }

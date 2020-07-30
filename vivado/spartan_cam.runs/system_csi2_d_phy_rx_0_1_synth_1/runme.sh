@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lesag/Documents/University/Personal_Projects/SEA_demo_projects/MIPI-In-HDMI-Out/spartan_cam/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1'
+HD_PWD='C:/Users/lesag/Documents/University/Personal_Projects/camera-filters/vivado/spartan_cam.runs/system_csi2_d_phy_rx_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

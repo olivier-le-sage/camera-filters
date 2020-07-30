@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Wed Jul 22 16:43:58 2020
+//Date        : Tue Jul 28 13:11:35 2020
 //Host        : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -785,7 +785,7 @@ module s00_couplers_imp_1LZPV07
   assign s00_couplers_to_s00_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=21,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_mb_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=29,numReposBlks=23,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_clkrst_cnt=2,da_mb_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (TMDS_0_clk_n,
     TMDS_0_clk_p,
@@ -793,7 +793,6 @@ module system
     TMDS_0_data_p,
     UART_0_rxd,
     UART_0_txd,
-    buttons,
     cam_gpio,
     cam_iic_scl_i,
     cam_iic_scl_o,
@@ -801,6 +800,7 @@ module system
     cam_iic_sda_i,
     cam_iic_sda_o,
     cam_iic_sda_t,
+    change_filter,
     clk_in1_0,
     clk_rxn_0,
     clk_rxp_0,
@@ -808,6 +808,7 @@ module system
     data_lp_p_0,
     data_rxn_0,
     data_rxp_0,
+    filter_reset,
     led_tri_o);
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 TMDS_0 CLK_N" *) output TMDS_0_clk_n;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 TMDS_0 CLK_P" *) output TMDS_0_clk_p;
@@ -815,7 +816,6 @@ module system
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 TMDS_0 DATA_P" *) output [2:0]TMDS_0_data_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *) input UART_0_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *) output UART_0_txd;
-  input [1:0]buttons;
   output [0:0]cam_gpio;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cam_iic SCL_I" *) input cam_iic_scl_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cam_iic SCL_O" *) output cam_iic_scl_o;
@@ -823,6 +823,7 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cam_iic SDA_I" *) input cam_iic_sda_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cam_iic SDA_O" *) output cam_iic_sda_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cam_iic SDA_T" *) output cam_iic_sda_t;
+  input change_filter;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_IN1_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_IN1_0, CLK_DOMAIN system_clk_in1_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input clk_in1_0;
   input clk_rxn_0;
   input clk_rxp_0;
@@ -830,6 +831,7 @@ module system
   input [0:0]data_lp_p_0;
   input [1:0]data_rxn_0;
   input [1:0]data_rxp_0;
+  input filter_reset;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 led TRI_O" *) output [1:0]led_tri_o;
 
   wire [1:0]axi_gpio_0_GPIO_TRI_O;
@@ -845,7 +847,9 @@ module system
   wire bayer2rgb_0_de_out;
   wire bayer2rgb_0_hsync_out;
   wire bayer2rgb_0_vsync_out;
-  wire [1:0]buttons_1;
+  wire button_debounce_0_button_event;
+  wire button_debounce_1_button_event;
+  wire change_filter_1;
   wire clk_in1_0_1;
   wire clk_rxn_0_1;
   wire clk_rxp_0_1;
@@ -883,6 +887,7 @@ module system
   wire [0:0]data_lp_p_0_1;
   wire [1:0]data_rxn_0_1;
   wire [1:0]data_rxp_0_1;
+  wire filter_reset_1;
   wire [23:0]gamma_correction_0_rgb_data_out;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
@@ -1002,12 +1007,12 @@ module system
   assign axi_iic_0_IIC_SCL_I = cam_iic_scl_i;
   assign axi_iic_0_IIC_SDA_I = cam_iic_sda_i;
   assign axi_uartlite_0_UART_RxD = UART_0_rxd;
-  assign buttons_1 = buttons[1:0];
   assign cam_gpio[0] = xlconstant_0_dout;
   assign cam_iic_scl_o = axi_iic_0_IIC_SCL_O;
   assign cam_iic_scl_t = axi_iic_0_IIC_SCL_T;
   assign cam_iic_sda_o = axi_iic_0_IIC_SDA_O;
   assign cam_iic_sda_t = axi_iic_0_IIC_SDA_T;
+  assign change_filter_1 = change_filter;
   assign clk_in1_0_1 = clk_in1_0;
   assign clk_rxn_0_1 = clk_rxn_0;
   assign clk_rxp_0_1 = clk_rxp_0;
@@ -1015,6 +1020,7 @@ module system
   assign data_lp_p_0_1 = data_lp_p_0[0];
   assign data_rxn_0_1 = data_rxn_0[1:0];
   assign data_rxp_0_1 = data_rxp_0[1:0];
+  assign filter_reset_1 = filter_reset;
   assign led_tri_o[1:0] = axi_gpio_0_GPIO_TRI_O;
   system_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
@@ -1097,6 +1103,14 @@ module system
         .vdata(csi2dvp_0_vdata),
         .vsync_in(csi2dvp_0_vid_vsync),
         .vsync_out(bayer2rgb_0_vsync_out));
+  system_button_debounce_0_0 button_debounce_0
+       (.button(change_filter_1),
+        .button_event(button_debounce_0_button_event),
+        .clk(clk_wiz_1_clk_out1));
+  system_button_debounce_1_0 button_debounce_1
+       (.button(filter_reset_1),
+        .button_event(button_debounce_1_button_event),
+        .clk(clk_wiz_1_clk_out1));
   system_clk_wiz_0_1 clk_wiz_0
        (.clk_in1(clk_in1_0_1),
         .clk_out1(microblaze_0_Clk),
@@ -1171,7 +1185,8 @@ module system
         .trig_ack(csi_to_axis_0_data_err_ACK),
         .trig_req(csi_to_axis_0_data_err_TRIG));
   system_gamma_correction_0_0 gamma_correction_0
-       (.key(buttons_1),
+       (.change_filt(button_debounce_0_button_event),
+        .reset(button_debounce_1_button_event),
         .rgb_data_in(bayer2rgb_0_data_out),
         .rgb_data_out(gamma_correction_0_rgb_data_out));
   system_mdm_1_0 mdm_1

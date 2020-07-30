@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Jul 22 16:48:57 2020
+| Date         : Tue Jul 28 13:16:32 2020
 | Host         : LAPTOP-KDBVI58S running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -171,6 +171,8 @@ Table of Contents
 | system_csi2_d_phy_rx_0_1    |    1 |
 | system_clk_wiz_1_0          |    1 |
 | system_clk_wiz_0_1          |    1 |
+| system_button_debounce_1_0  |    1 |
+| system_button_debounce_0_0  |    1 |
 | system_bayer2rgb_0_0        |    1 |
 | system_axi_uartlite_0_0     |    1 |
 | system_axi_iic_0_0          |    1 |

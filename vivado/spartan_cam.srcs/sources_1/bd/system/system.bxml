@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1595450642"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1595450642"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1595450642"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1595450642"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1595956298"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1595956298"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1595956298"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1595956298"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_clk_wiz_0_1\system_clk_wiz_0_1.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -177,6 +177,22 @@
       </File>
       <File Name="ip\system_gamma_correction_0_0\system_gamma_correction_0_0.xci" Type="IP">
         <Instance HierarchyPath="gamma_correction_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_button_debounce_0_0\system_button_debounce_0_0.xci" Type="IP">
+        <Instance HierarchyPath="button_debounce_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_button_debounce_1_0\system_button_debounce_1_0.xci" Type="IP">
+        <Instance HierarchyPath="button_debounce_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
